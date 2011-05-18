@@ -89,18 +89,6 @@
 	_webView.delegate = self;
 	self.view.backgroundColor = [UIColor blackColor];
 	[self.view addSubview:_webView];
-
-	// Load the URL
-	if (_homeURL) {
-		NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_homeURL];
-		[_webView loadRequest:request];
-		[request release];
-	}
-	
-	// Load the HTML string
-	if (self.HTMLString) {
-		[_webView loadHTMLString:self.HTMLString baseURL:self.baseURL];
-	}
 	
 	self.contentSizeForViewInPopover = self.minContentSizeForViewInPopover;
 	
@@ -111,6 +99,8 @@
 														 action:@selector(dismiss)] autorelease];
 		self.navigationItem.leftBarButtonItem = cancelButton;
 	}
+	
+	_hasFinishedLoading = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -125,9 +115,25 @@
 	[self setToolbarItems:_toolbarButtonsStatic animated:animated];
 
 	// Display the toolbar
-	if (self.hidesToolbar == NO) [self.navigationController setToolbarHidden:NO animated:animated];
+	if ((self.hidesToolbar == NO) && [self.navigationController isToolbarHidden]) {
+		[self.navigationController setToolbarHidden:NO animated:animated];
+	}
 	
-	_webView.hidden = YES;
+	if (_hasFinishedLoading == NO) {
+		_webView.hidden = YES;
+		
+		// Load the URL
+		if (_homeURL) {
+			NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_homeURL];
+			[_webView loadRequest:request];
+			[request release];
+		}
+		
+		// Load the HTML string
+		if (self.HTMLString) {
+			[_webView loadHTMLString:self.HTMLString baseURL:self.baseURL];
+		}
+	}		
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -283,6 +289,7 @@
 	}
 		
 	_webView.hidden = NO;
+	_hasFinishedLoading = YES;
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {

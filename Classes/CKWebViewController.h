@@ -40,6 +40,7 @@ typedef enum {
 	CGSize _maxContentSizeForViewInPopover;
 	
 	BOOL _canBeDismissed;
+	BOOL _hasFinishedLoading;
 }
 
 @property (readonly, nonatomic, retain) NSURL *homeURL;
