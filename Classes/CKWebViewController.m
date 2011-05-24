@@ -157,7 +157,7 @@
 	// Start loading the content
 	
 	if (_didFinishLoading == NO) {
-		_webView.hidden = YES;
+		_webView.alpha = 0;
 	
 		if (_homeURL) {
 			NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_homeURL];
@@ -296,9 +296,11 @@
 		
 		self.contentSizeForViewInPopover = CGSizeMake(self.contentSizeForViewInPopover.width, height);
 	}
-		
-	_webView.hidden = NO;
 	_didFinishLoading = YES;
+
+	[UIView beginAnimations:@"WebView" context:nil];
+	_webView.alpha = 1.0f;
+	[UIView commitAnimations];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
