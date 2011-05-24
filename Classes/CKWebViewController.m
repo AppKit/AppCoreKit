@@ -47,6 +47,7 @@
 @synthesize minContentSizeForViewInPopover = _minContentSizeForViewInPopover;
 @synthesize maxContentSizeForViewInPopover = _maxContentSizeForViewInPopover;
 @synthesize canBeDismissed = _canBeDismissed;
+@synthesize webViewToolbar = _webViewToolbar;
 
 - (void)setup {
 	_showURLInTitle = YES;
@@ -77,18 +78,41 @@
     return self;	
 }
 
+- (void)dealloc {
+	[_HTMLString release];
+	[_baseURL release];
+	[_reloadButton release];
+	[_webView release];
+	[_homeURL release];
+	[_backButton release];
+	[_forwardButton release];
+	[_toolbarButtonsStatic release];
+	[_toolbarButtonsLoading release];
+	[_navigationControllerStyles release];
+	[_onLoadScript release];
+	[_webViewToolbar release];
+    [super dealloc];
+}
+
+//
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	self.view.autoresizingMask = CKUIViewAutoresizingFlexibleAll;
-
+	//self.view.autoresizingMask = CKUIViewAutoresizingFlexibleAll;
+	self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+	
 	// Set up the WebView
 	_webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-	_webView.autoresizingMask = CKUIViewAutoresizingFlexibleAll;
+	_webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	_webView.scalesPageToFit = YES;
 	_webView.delegate = self;
 	self.view.backgroundColor = [UIColor blackColor];
 	[self.view addSubview:_webView];
+	
+	self.webViewToolbar = [[[UIToolbar alloc] init] autorelease];
+	self.webViewToolbar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+	[self.view addSubview:_webViewToolbar];
 	
 	self.contentSizeForViewInPopover = self.minContentSizeForViewInPopover;
 	
@@ -100,44 +124,49 @@
 		self.navigationItem.leftBarButtonItem = cancelButton;
 	}
 	
-	_hasFinishedLoading = NO;
+	_didFinishLoading = NO;
 }
+
+- (void)viewDidUnload {
+	[_webView release];
+	[_backButton release];
+	[_forwardButton release];
+	[_webViewToolbar release];
+}
+
+//
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 
 	// Save the NavigationController styles
 	_navigationControllerStyles = [[self.navigationController getStyles] retain];
-
+	[self.navigationController setToolbarHidden:YES animated:NO];
 	[self.navigationController setNavigationBarHidden:NO animated:animated];
-	
-	[self updateToolbar];
-	[self setToolbarItems:_toolbarButtonsStatic animated:animated];
 
-	// Display the toolbar
-	if ((self.hidesToolbar == NO) && [self.navigationController isToolbarHidden]) {
-		[self.navigationController setToolbarHidden:NO animated:animated];
-	}
+	// Setup the web view
+	_webView.frame = self.hidesToolbar ? self.view.bounds : CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 44);
 	
-	if (_hasFinishedLoading == NO) {
+	// Setup the custom toolbar
+	self.webViewToolbar.frame = CGRectMake(0, self.view.bounds.size.height - 44, self.view.bounds.size.width, 44);
+	[self updateToolbar];
+	[self.webViewToolbar setItems:_toolbarButtonsStatic animated:animated];
+
+	self.webViewToolbar.hidden = self.hidesToolbar;
+	
+	// Start loading the content
+	
+	if (_didFinishLoading == NO) {
 		_webView.hidden = YES;
-		
-		// Load the URL
+	
 		if (_homeURL) {
 			NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_homeURL];
 			[_webView loadRequest:request];
 			[request release];
+		} else if (_HTMLString) {
+			[_webView loadHTMLString:_HTMLString baseURL:self.baseURL];
 		}
-		
-		// Load the HTML string
-		if (self.HTMLString) {
-			[_webView loadHTMLString:self.HTMLString baseURL:self.baseURL];
-		}
-	}		
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
+	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -156,29 +185,7 @@
 	[super viewWillDisappear:animated];
 }
 
-- (void)viewDidUnload {
-	[_webView release];
-	_webView = nil;
-	[_backButton release];
-	_backButton = nil;
-	[_forwardButton release];
-	_forwardButton = nil;
-}
-
-- (void)dealloc {
-	self.HTMLString = nil;
-	self.baseURL = nil;
-	self.reloadButton = nil;
-	[_webView release];
-	[_homeURL release];
-	[_backButton release];
-	[_forwardButton release];
-	[_toolbarButtonsStatic release];
-	[_toolbarButtonsLoading release];
-	[_navigationControllerStyles release];
-	[_onLoadScript release];
-    [super dealloc];
-}
+//
 
 - (void)setActionButtonWithStyle:(UIBarButtonSystemItem)style action:(SEL)action target:(id)target {
 	UIBarButtonItem *actionButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:style target:target action:action] autorelease];
@@ -200,16 +207,18 @@
 	_forwardButton.enabled = _webView.canGoForward;
 	
 	[self generateToolbar];
-	if ([_webView isLoading]) [self setToolbarItems:self.toolbarButtonsLoading animated:YES];
-	else [self setToolbarItems:self.toolbarButtonsStatic animated:YES];
+	if ([_webView isLoading]) [self.webViewToolbar setItems:self.toolbarButtonsLoading animated:NO];
+	else [self.webViewToolbar setItems:self.toolbarButtonsStatic animated:NO];
 }
 
 - (void)goBack {
 	[_webView goBack];
 }
+
 - (void)goForward {
 	[_webView goForward];
 }
+
 - (void)reload {
 	[_webView reload];
 }
@@ -289,7 +298,7 @@
 	}
 		
 	_webView.hidden = NO;
-	_hasFinishedLoading = YES;
+	_didFinishLoading = YES;
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
