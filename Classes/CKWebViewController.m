@@ -271,6 +271,10 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	if ([request.URL isEqual:[NSURL URLWithString:@"about:blank"]] && navigationType == UIWebViewNavigationTypeReload) return NO;
+	if ([[request.URL scheme] isEqual:@"itms-apps"]) { 
+		[[UIApplication sharedApplication] openURL:request.URL];
+		return NO;
+	}
 	return YES;
 }
 
