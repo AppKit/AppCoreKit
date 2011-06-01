@@ -17,6 +17,7 @@ typedef enum {
 @interface CKWebViewController : UIViewController <UIWebViewDelegate> {
 	UIWebView *_webView;
 	UIToolbar* _webViewToolbar;
+	UIActivityIndicatorView *_activityIndicator;
 	
 	NSURL *_homeURL;
 	NSString *_HTMLString;
@@ -24,6 +25,7 @@ typedef enum {
 
 	BOOL _showURLInTitle;
 	BOOL _hidesToolbar;
+	BOOL _hidesWhileLoading;
 	
 	UIBarButtonItem *_backButton;
 	UIBarButtonItem *_forwardButton;
@@ -48,6 +50,7 @@ typedef enum {
 @property (readonly, nonatomic) NSURL *currentURL;
 @property (nonatomic, assign, getter=isURLInTitle, setter=showURLInTitle:) BOOL _showURLInTitle;
 @property (nonatomic, assign) BOOL hidesToolbar;
+@property (nonatomic, assign) BOOL hidesWhileLoading;
 @property (nonatomic, retain) NSString *onLoadScript;
 @property (nonatomic, assign) CGSize minContentSizeForViewInPopover;
 @property (nonatomic, assign) CGSize maxContentSizeForViewInPopover;

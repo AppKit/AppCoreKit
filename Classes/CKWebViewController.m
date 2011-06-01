@@ -45,6 +45,7 @@
 @synthesize toolbarButtonsStatic = _toolbarButtonsStatic;
 @synthesize _showURLInTitle;
 @synthesize hidesToolbar = _hidesToolbar;
+@synthesize hidesWhileLoading = _hidesWhileLoading;
 @synthesize onLoadScript = _onLoadScript;
 @synthesize minContentSizeForViewInPopover = _minContentSizeForViewInPopover;
 @synthesize maxContentSizeForViewInPopover = _maxContentSizeForViewInPopover;
@@ -93,6 +94,7 @@
 	[_navigationControllerStyles release];
 	[_onLoadScript release];
 	[_webViewToolbar release];
+	[_activityIndicator release];
     [super dealloc];
 }
 
@@ -101,8 +103,15 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	//self.view.autoresizingMask = CKUIViewAutoresizingFlexibleAll;
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+	
+	// Set up the activity indicator when needed
+	if (_hidesWhileLoading) {
+		_activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+		_activityIndicator.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleRightMargin;
+		[_activityIndicator startAnimating];
+		[self.view addSubview:_activityIndicator];
+	}
 	
 	// Set up the WebView
 	_webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
@@ -137,13 +146,14 @@
 	[_backButton release];
 	[_forwardButton release];
 	[_webViewToolbar release];
+	[_activityIndicator release];
 }
 
 //
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-
+	
 	// Save the NavigationController styles
 	_navigationControllerStyles = [[self.navigationController getStyles] retain];
 	[self.navigationController setToolbarHidden:YES animated:NO];
@@ -162,7 +172,9 @@
 	// Start loading the content
 	
 	if (_didFinishLoading == NO) {
-		//_webView.alpha = 0;
+		if (_hidesWhileLoading) {
+			_webView.alpha = 0;
+		}
 	
 		if (_homeURL) {
 			NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_homeURL];
@@ -172,7 +184,21 @@
 			[_webView loadHTMLString:_HTMLString baseURL:self.baseURL];
 		}
 	}
+
+	// 
+	
+	if (_hidesWhileLoading) {
+		CGRect frame = CGRectMake((self.view.frame.size.width - _activityIndicator.frame.size.width) / 2.0, 
+								  (self.view.frame.size.height - _activityIndicator.frame.size.height) / 2.0,
+								  _activityIndicator.frame.size.width - 1,
+								  _activityIndicator.frame.size.height - 1);
+		_activityIndicator.frame = CGRectIntegral(frame);
+		NSString *f = NSStringFromCGRect(frame);
+		int i = 0;
+	}			
 }
+
+//
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
@@ -316,9 +342,11 @@
 	}
 	_didFinishLoading = YES;
 
-//	[UIView beginAnimations:@"WebView" context:nil];
-//	_webView.alpha = 1.0f;
-//	[UIView commitAnimations];
+	if (_hidesWhileLoading) {
+		[UIView beginAnimations:@"WebView" context:nil];
+		_webView.alpha = 1.0f;
+		[UIView commitAnimations];
+	}
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
