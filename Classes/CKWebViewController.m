@@ -11,6 +11,8 @@
 #import "CKConstants.h"
 #import "CKBundle.h"
 
+#import "CKDebug.h"
+
 #define CKBarButtonItemFlexibleSpace [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil] autorelease]
 
 @interface CKWebViewController ()
@@ -160,7 +162,7 @@
 	// Start loading the content
 	
 	if (_didFinishLoading == NO) {
-		_webView.alpha = 0;
+		//_webView.alpha = 0;
 	
 		if (_homeURL) {
 			NSURLRequest *request = [[NSURLRequest alloc] initWithURL:_homeURL];
@@ -270,6 +272,8 @@
 #pragma mark WebView Delegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	CKDebugLog(@"shouldStartLoadWithRequest: %@", request);
+	
 	if ([request.URL isEqual:[NSURL URLWithString:@"about:blank"]] && navigationType == UIWebViewNavigationTypeReload) return NO;
 	if ([[request.URL scheme] isEqual:@"itms-apps"]) { 
 		[[UIApplication sharedApplication] openURL:request.URL];
@@ -279,11 +283,15 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
+	CKDebugLog(@"webViewDidStartLoad");
+	
 	[self updateToolbar];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+	CKDebugLog(@"webViewDidFinishLoad");
+	
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 		
 	[self updateToolbar];
@@ -308,9 +316,9 @@
 	}
 	_didFinishLoading = YES;
 
-	[UIView beginAnimations:@"WebView" context:nil];
-	_webView.alpha = 1.0f;
-	[UIView commitAnimations];
+//	[UIView beginAnimations:@"WebView" context:nil];
+//	_webView.alpha = 1.0f;
+//	[UIView commitAnimations];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
