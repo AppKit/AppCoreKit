@@ -21,4 +21,25 @@
 	return [UIColor colorWithRGBValue:0x385487];
 }
 
+- (UIColor *)RGBColor {
+	CGColorSpaceModel model = CGColorSpaceGetModel(CGColorGetColorSpace(self.CGColor));
+	
+	switch (model) {
+		case kCGColorSpaceModelRGB:
+			return self;
+			break;
+		case kCGColorSpaceModelMonochrome: {
+			const CGFloat *comps = CGColorGetComponents(self.CGColor);
+			return [UIColor colorWithRed:comps[0] green:comps[0] blue:comps[0] alpha:comps[1]];
+			break;
+		}
+			
+		default:
+			NSAssert(FALSE, @"CGColorSpaceModel (%d) not supported.", model);
+			break;
+	}	
+	
+	return nil;
+}
+
 @end

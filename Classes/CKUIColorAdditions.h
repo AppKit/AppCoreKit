@@ -12,5 +12,6 @@
 
 + (UIColor *)colorWithRGBValue:(NSUInteger)value;
 + (UIColor *)blueTextColor;
+- (UIColor *)RGBColor;
 
 @end
