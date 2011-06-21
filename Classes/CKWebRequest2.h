@@ -19,7 +19,7 @@ OBJC_EXPORT NSString * const CKWebRequestHTTPErrorDomain;
 
 @protocol  CKWebRequestDelegate;
 
-@interface CKWebRequest2 : NSOperation {
+@interface CKWebRequest2 : NSOperation{
 	NSMutableURLRequest *theRequest;
 	NSURLConnection *theConnection;
 	NSHTTPURLResponse *theResponse;
@@ -31,6 +31,9 @@ OBJC_EXPORT NSString * const CKWebRequestHTTPErrorDomain;
 	NSString* destinationPath;
 	BOOL allowDestinationOverwrite;
 	NSOutputStream* destinationStream;
+	
+	NSString* username;
+	NSString* password;
 	
 	BOOL executing;
 	BOOL finished;
@@ -53,6 +56,8 @@ OBJC_EXPORT NSString * const CKWebRequestHTTPErrorDomain;
 - (void)setDestination:(NSString *)path allowOverwrite:(BOOL)allowOverwrite;
 
 - (void)startAsynchronous;
+
+- (void)setBasicAuthWithUsername:(NSString *)username password:(NSString *)password;
 
 //
 

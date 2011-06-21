@@ -33,6 +33,9 @@ NSString * const CKWebRequestHTTPErrorDomain = @"CKWebRequestHTTPErrorDomain";
 @property (nonatomic, assign, readwrite) BOOL allowDestinationOverwrite;
 @property (nonatomic, retain, readwrite) NSOutputStream *destinationStream;
 
+@property (nonatomic, retain) NSString* username;
+@property (nonatomic, retain) NSString* password;
+
 - (void)markAsExecuting;
 - (void)markAsFinished;
 - (void)markAsCancelled;
@@ -52,6 +55,8 @@ NSString * const CKWebRequestHTTPErrorDomain = @"CKWebRequestHTTPErrorDomain";
 @synthesize destinationPath;
 @synthesize allowDestinationOverwrite;
 @synthesize destinationStream;
+@synthesize username = username;
+@synthesize password = password;
 
 #pragma mark Initialization
 
@@ -87,6 +92,8 @@ NSString * const CKWebRequestHTTPErrorDomain = @"CKWebRequestHTTPErrorDomain";
 	[theConnection release];
 	self.destinationPath = nil;
 	self.destinationStream = nil;
+	self.username = nil;
+	self.password = nil;
 	[super dealloc];
 }
 
@@ -112,6 +119,11 @@ NSString * const CKWebRequestHTTPErrorDomain = @"CKWebRequestHTTPErrorDomain";
 - (void)setDestination:(NSString *)path allowOverwrite:(BOOL)allowOverwrite{
 	self.destinationPath = path;
 	self.allowDestinationOverwrite = allowOverwrite;
+}
+
+- (void)setBasicAuthWithUsername:(NSString *)_username password:(NSString *)_password {
+	self.username = _username;
+	self.password = _password;
 }
 
 #pragma mark Public API
@@ -387,6 +399,23 @@ NSString * const CKWebRequestHTTPErrorDomain = @"CKWebRequestHTTPErrorDomain";
 	//CKDebugLog(@"ERR Connection failed! %@ %@", [error localizedDescription], [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 	[theDelegate performSelectorOnMainThread:@selector(request:didFailWithError:) withObject:self withObject:error waitUntilDone:NO];
 	[self markAsFinished];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+	if (self.username && self.password) {
+		if ([challenge previousFailureCount] == 0) {
+			NSURLCredential *newCredential;
+			newCredential=[NSURLCredential credentialWithUser:self.username
+													 password:self.password
+												  persistence:NSURLCredentialPersistenceNone];
+			[[challenge sender] useCredential:newCredential
+				   forAuthenticationChallenge:challenge];
+		} else {
+			[[challenge sender] cancelAuthenticationChallenge:challenge];
+		}
+	} else {
+		[[challenge sender] cancelAuthenticationChallenge:challenge];
+	}
 }
 
 #pragma mark NSOperation
