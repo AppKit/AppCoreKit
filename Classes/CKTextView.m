@@ -22,7 +22,7 @@
 @synthesize maxStretchableHeight = _maxStretchableHeight;
 
 - (void)postInit {
-	self.placeholderLabel = [[[UILabel alloc] initWithFrame:CGRectMake(8, 8, self.bounds.size.width-16, self.font.lineHeight)] autorelease];
+	self.placeholderLabel = [[[UILabel alloc] initWithFrame:CGRectMake(8, 8, self.bounds.size.width-16, self.font.leading)] autorelease];
 	self.placeholderLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 	self.placeholderLabel.font = self.font;
 	self.placeholderLabel.backgroundColor = [UIColor clearColor];
@@ -99,7 +99,7 @@
 }
 - (void)setContentSize:(CGSize)size {
 	if (size.height == 50) {
-		size.height = self.font.lineHeight + 16;
+		size.height = self.font.leading + 16;
 	}
 	[super setContentSize:size];
 }
@@ -121,7 +121,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
 	if ([keyPath isEqualToString:@"font"]) {
 		self.placeholderLabel.font = self.font;
-		self.placeholderLabel.frame = CGRectMake(8, 8, self.placeholderLabel.bounds.size.width, self.font.lineHeight);
+		self.placeholderLabel.frame = CGRectMake(8, 8, self.placeholderLabel.bounds.size.width, self.font.leading);
 	}
 }
 

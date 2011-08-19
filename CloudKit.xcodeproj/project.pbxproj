@@ -37,8 +37,6 @@
 		4F59F0CE11D00DD6003B4CA8 /* MKNumberBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F59F0CC11D00DD6003B4CA8 /* MKNumberBadgeView.m */; };
 		4F69540212E8F0530085881D /* CKCoreGraphicsAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F69540012E8F0530085881D /* CKCoreGraphicsAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F69540312E8F0530085881D /* CKCoreGraphicsAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F69540112E8F0530085881D /* CKCoreGraphicsAdditions.m */; };
-		4F7305D713467730001677B7 /* CKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7305D513467730001677B7 /* CKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F7305D813467730001677B7 /* CKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7305D613467730001677B7 /* CKTextView.m */; };
 		4F7305E4134677A7001677B7 /* CKTextViewCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7305E2134677A7001677B7 /* CKTextViewCellController.h */; };
 		4F7305E5134677A7001677B7 /* CKTextViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7305E3134677A7001677B7 /* CKTextViewCellController.m */; };
 		4F95B7BC11C805120002E71E /* CKLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F95B7BB11C805120002E71E /* CKLocalization.m */; };
@@ -120,6 +118,8 @@
 		712E10A310A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E10A210A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m */; };
 		712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7173D28F10A4BD98004E9621 /* SenTestingKit.framework */; };
 		712E116210A4DBAB00DF6562 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712E109810A4CB0000DF6562 /* libxml2.dylib */; };
+		713C82EC13FAB389001094D6 /* CKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 713C82EA13FAB389001094D6 /* CKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713C82ED13FAB389001094D6 /* CKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 713C82EB13FAB389001094D6 /* CKTextView.m */; };
 		713F4ABB10FB79C7005367AB /* CKStoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 713F4ABA10FB79C7005367AB /* CKStoreTestCase.m */; };
 		713F4AF410FB7BC9005367AB /* libCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libCloudKit.a */; };
 		713F4B0B10FB7C78005367AB /* CKNSDate+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E0CBA10DB063000AA4B07 /* CKNSDate+Calculations.m */; };
@@ -368,8 +368,6 @@
 		4F59F0CC11D00DD6003B4CA8 /* MKNumberBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNumberBadgeView.m; sourceTree = "<group>"; };
 		4F69540012E8F0530085881D /* CKCoreGraphicsAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCoreGraphicsAdditions.h; sourceTree = "<group>"; };
 		4F69540112E8F0530085881D /* CKCoreGraphicsAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCoreGraphicsAdditions.m; sourceTree = "<group>"; };
-		4F7305D513467730001677B7 /* CKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextView.h; sourceTree = "<group>"; };
-		4F7305D613467730001677B7 /* CKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTextView.m; sourceTree = "<group>"; };
 		4F7305E2134677A7001677B7 /* CKTextViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextViewCellController.h; sourceTree = "<group>"; };
 		4F7305E3134677A7001677B7 /* CKTextViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTextViewCellController.m; sourceTree = "<group>"; };
 		4F95B7BB11C805120002E71E /* CKLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKLocalization.m; sourceTree = "<group>"; };
@@ -443,6 +441,8 @@
 		712E109810A4CB0000DF6562 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		712E10A110A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKNSArrayAdditionsTestCase.h; path = ../TestCases/CKNSArrayAdditionsTestCase.h; sourceTree = "<group>"; };
 		712E10A210A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKNSArrayAdditionsTestCase.m; path = ../TestCases/CKNSArrayAdditionsTestCase.m; sourceTree = "<group>"; };
+		713C82EA13FAB389001094D6 /* CKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextView.h; sourceTree = "<group>"; };
+		713C82EB13FAB389001094D6 /* CKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKTextView.m; sourceTree = "<group>"; };
 		713F4AB910FB79C7005367AB /* CKStoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStoreTestCase.h; path = ../TestCases/CKStoreTestCase.h; sourceTree = "<group>"; };
 		713F4ABA10FB79C7005367AB /* CKStoreTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStoreTestCase.m; path = ../TestCases/CKStoreTestCase.m; sourceTree = "<group>"; };
 		713F4B1410FB7CB4005367AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -835,6 +835,8 @@
 		715CA152110E36F700593672 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				713C82EA13FAB389001094D6 /* CKTextView.h */,
+				713C82EB13FAB389001094D6 /* CKTextView.m */,
 				4FF2D48D13A02536007136A4 /* CKGradientView.h */,
 				4FF2D48E13A02536007136A4 /* CKGradientView.m */,
 				4F9B494F12EA5183001AA996 /* CKPageScrollView.h */,
@@ -868,8 +870,6 @@
 				7119A73012E64BC0003A46B0 /* CKUIImage+Transformations.h */,
 				8566B71F12F079E900277972 /* CKUIView+Factory.h */,
 				8566B72012F079E900277972 /* CKUIView+Factory.m */,
-				4F7305D513467730001677B7 /* CKTextView.h */,
-				4F7305D613467730001677B7 /* CKTextView.m */,
 			);
 			name = UI;
 			path = Classes;
@@ -1436,9 +1436,9 @@
 				751004BF1337BB1C008B0E7B /* CKObjectViewControllerFactory.h in Headers */,
 				75E71A83133A6A1C00CAAE66 /* CKFeedSourceViewCellController.h in Headers */,
 				75E71A85133A6A1C00CAAE66 /* CKFeedTableViewController.h in Headers */,
-				4F7305D713467730001677B7 /* CKTextView.h in Headers */,
 				4F7305E4134677A7001677B7 /* CKTextViewCellController.h in Headers */,
 				4FF2D48F13A02536007136A4 /* CKGradientView.h in Headers */,
+				713C82EC13FAB389001094D6 /* CKTextView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1700,9 +1700,9 @@
 				751004C01337BB1C008B0E7B /* CKObjectViewControllerFactory.m in Sources */,
 				75E71A84133A6A1C00CAAE66 /* CKFeedSourceViewCellController.m in Sources */,
 				75E71A86133A6A1C00CAAE66 /* CKFeedTableViewController.m in Sources */,
-				4F7305D813467730001677B7 /* CKTextView.m in Sources */,
 				4F7305E5134677A7001677B7 /* CKTextViewCellController.m in Sources */,
 				4FF2D49013A02536007136A4 /* CKGradientView.m in Sources */,
+				713C82ED13FAB389001094D6 /* CKTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
