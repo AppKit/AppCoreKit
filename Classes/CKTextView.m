@@ -83,7 +83,10 @@
 
 - (void)setText:(NSString *)text {
 	[super setText:text];
-	self.placeholderLabel.hidden = [self hasText];
+    // NOTES: for some reasons [self hasText] returns NO at this point on iOS 3.x
+    // I suppose is has been fixed on iOS 4.x.
+    BOOL hidden = ((text != nil) || ([text length] > 0));
+	self.placeholderLabel.hidden = hidden;
 }
 
 //
