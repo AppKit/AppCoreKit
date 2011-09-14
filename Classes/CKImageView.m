@@ -100,7 +100,10 @@
 		return;
 	
 	self.imageView.image = image;
-	[self.button setBackgroundImage:image forState:UIControlStateNormal];
+	
+	[self.button setImage:image forState:UIControlStateNormal];
+	[self.button setImage:image forState:UIControlStateHighlighted];
+
 	if(updateViews){
 		[self updateViews:animated];
 	}
