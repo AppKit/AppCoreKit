@@ -13,6 +13,8 @@
 // Original code by Ian Baird on 3/28/08.
 // TouchCode. Copyright 2008 Skorpiostech.
 
+static inline double radians(double degrees) { return degrees * M_PI/180; }
+
 - (UIImage *)imageThatFits:(CGSize)theSize crop:(BOOL)crop
 {
     CGRect destRect = CGRectMake(0.0f, 0.0f, theSize.width, theSize.height);
@@ -53,6 +55,24 @@
     CGContextRef gc = CGBitmapContextCreate(NULL, theSize.width, theSize.height, 8, (4 * theSize.width), colorSpace, kCGImageAlphaPremultipliedFirst);
     CGColorSpaceRelease(colorSpace);
     CGContextSetInterpolationQuality(gc, kCGInterpolationHigh);
+    
+    // FIXME: Take orientation into consideration before drawing the resized picture.
+    // BUG: There is still a bug with non-cropped images. Need to be fixed.
+    if (crop) {
+        if (self.imageOrientation == UIImageOrientationLeft) {
+            CGContextRotateCTM(gc, radians(90.0));
+            CGContextTranslateCTM(gc, 0, -destRect.size.height);
+        } else if (self.imageOrientation == UIImageOrientationRight) {
+            CGContextRotateCTM(gc, radians(-90.0));
+            CGContextTranslateCTM(gc, -destRect.size.width, 0);
+        } else if (self.imageOrientation == UIImageOrientationUp) {
+            // Do nothing
+        } else if (self.imageOrientation == UIImageOrientationDown) {
+            CGContextTranslateCTM(gc, destRect.size.width, destRect.size.height);
+            CGContextRotateCTM(gc, radians(-180.0));
+        }
+    }
+    
     CGContextDrawImage(gc, destRect, srcImage);
     CGImageRef contextImage = CGBitmapContextCreateImage(gc);
     CGContextRelease(gc);
