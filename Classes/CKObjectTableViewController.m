@@ -232,7 +232,7 @@
 	//Adds searchbars if needed
 	CGFloat tableViewOffset = 0;
 	if(self.searchEnabled && self.searchDisplayController == nil && _searchBar == nil){
-		UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice]orientation];
+		UIDeviceOrientation deviceOrientation = [[UIApplication sharedApplication]statusBarOrientation];
 		BOOL isPortrait = !UIDeviceOrientationIsLandscape(deviceOrientation);
 		BOOL isIpad = ([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPad);
 		BOOL tooSmall = self.view.bounds.size.width <= 320;
