@@ -109,7 +109,7 @@
 		self.value = [NSNumber numberWithInt:v];
 	}
 	else{
-		self.value = [NSNumber numberWithInt:tableViewController.selectedIndex];
+		self.value = [self.values objectAtIndex:tableViewController.selectedIndex];
 	}
 	
 	if(self.tableViewCell){
