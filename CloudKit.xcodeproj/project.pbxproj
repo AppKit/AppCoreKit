@@ -113,7 +113,6 @@
 		712E101210A4C83100DF6562 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		712E101310A4C83100DF6562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		712E101410A4C83100DF6562 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
-		712E101510A4C83100DF6562 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */; };
 		712E109910A4CB0000DF6562 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712E109810A4CB0000DF6562 /* libxml2.dylib */; };
 		712E10A310A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E10A210A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m */; };
 		712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7173D28F10A4BD98004E9621 /* SenTestingKit.framework */; };
@@ -199,7 +198,6 @@
 		71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */; };
-		71AD9EEF10A36F9200C88903 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */; };
 		71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
 		71ADA00B10A371C900C88903 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA00910A371C900C88903 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA00C10A371C900C88903 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA00A10A371C900C88903 /* Reachability.m */; };
@@ -259,6 +257,7 @@
 		71E6660E1125D037005E6CEC /* CKUIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E6660C1125D037005E6CEC /* CKUIColorAdditions.m */; };
 		71E6D1F81226F6B40083D977 /* CKSlideshowViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E6D1F61226F6B40083D977 /* CKSlideshowViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71E6D1F91226F6B40083D977 /* CKSlideshowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E6D1F71226F6B40083D977 /* CKSlideshowViewController.m */; };
+		71FA9411143FA9C800CE9A55 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FA9410143FA9C800CE9A55 /* libz.1.dylib */; };
 		71FD630E130C46E4007EA1B2 /* CKNSData+Compression.h in Headers */ = {isa = PBXBuildFile; fileRef = 71FD630C130C46E4007EA1B2 /* CKNSData+Compression.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71FD630F130C46E4007EA1B2 /* CKNSData+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FD630D130C46E4007EA1B2 /* CKNSData+Compression.m */; };
 		7506BB39132EB8EA001CC8CC /* MAZeroingWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 7506BB37132EB8EA001CC8CC /* MAZeroingWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -524,7 +523,6 @@
 		71AD9DF110A362C200C88903 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		71AD9DFB10A362E100C88903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		71AD9F1710A36FFE00C88903 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		71ADA00910A371C900C88903 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Apple/Reachability.h; sourceTree = "<group>"; };
 		71ADA00A10A371C900C88903 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Apple/Reachability.m; sourceTree = "<group>"; };
@@ -584,6 +582,7 @@
 		71E6660C1125D037005E6CEC /* CKUIColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUIColorAdditions.m; sourceTree = "<group>"; };
 		71E6D1F61226F6B40083D977 /* CKSlideshowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSlideshowViewController.h; sourceTree = "<group>"; };
 		71E6D1F71226F6B40083D977 /* CKSlideshowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKSlideshowViewController.m; sourceTree = "<group>"; };
+		71FA9410143FA9C800CE9A55 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
 		71FD630C130C46E4007EA1B2 /* CKNSData+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKNSData+Compression.h"; sourceTree = "<group>"; };
 		71FD630D130C46E4007EA1B2 /* CKNSData+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CKNSData+Compression.m"; sourceTree = "<group>"; };
 		7506BB37132EB8EA001CC8CC /* MAZeroingWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAZeroingWeakRef.h; path = Vendor/MAZeroingWeakRef/MAZeroingWeakRef.h; sourceTree = "<group>"; };
@@ -665,7 +664,6 @@
 				712E101210A4C83100DF6562 /* SystemConfiguration.framework in Frameworks */,
 				712E101310A4C83100DF6562 /* UIKit.framework in Frameworks */,
 				712E101410A4C83100DF6562 /* libicucore.dylib in Frameworks */,
-				712E101510A4C83100DF6562 /* libz.1.2.3.dylib in Frameworks */,
 				712E109910A4CB0000DF6562 /* libxml2.dylib in Frameworks */,
 				712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */,
 				715E0B3010DADFE100AA4B07 /* CoreGraphics.framework in Frameworks */,
@@ -678,12 +676,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FA9411143FA9C800CE9A55 /* libz.1.dylib in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				71AD9DE510A3629300C88903 /* AddressBook.framework in Frameworks */,
 				71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */,
 				71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */,
 				71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */,
-				71AD9EEF10A36F9200C88903 /* libz.1.2.3.dylib in Frameworks */,
 				71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */,
 				7173D29010A4BD98004E9621 /* SenTestingKit.framework in Frameworks */,
 				712E116210A4DBAB00DF6562 /* libxml2.dylib in Frameworks */,
@@ -745,13 +743,13 @@
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				71AD9DF110A362C200C88903 /* SystemConfiguration.framework */,
 				71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */,
-				71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */,
-				71AD9F1710A36FFE00C88903 /* libicucore.dylib */,
-				712E109810A4CB0000DF6562 /* libxml2.dylib */,
 				7173D28F10A4BD98004E9621 /* SenTestingKit.framework */,
 				715E0B2A10DADFD300AA4B07 /* CoreGraphics.framework */,
 				71917B2A1199E7E300386EB5 /* MapKit.framework */,
 				71B1BF6C123A9F6B002D7A9A /* MobileCoreServices.framework */,
+				71FA9410143FA9C800CE9A55 /* libz.1.dylib */,
+				71AD9F1710A36FFE00C88903 /* libicucore.dylib */,
+				712E109810A4CB0000DF6562 /* libxml2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1766,6 +1764,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -1788,6 +1787,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 674;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
