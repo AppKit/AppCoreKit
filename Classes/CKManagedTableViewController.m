@@ -357,7 +357,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 	UIView *headerView = [[self.sections objectAtIndex:section] headerView];
 	if (headerView) return headerView.frame.size.height;
-	return (tableView.style == UITableViewStyleGrouped) ? 34.0f : tableView.sectionHeaderHeight;
+	return -1; // Not documented by Apple, but returns an automatic height.
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
