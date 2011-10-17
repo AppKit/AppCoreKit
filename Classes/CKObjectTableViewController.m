@@ -21,7 +21,7 @@
 @interface CKObjectTableViewController ()
 @property (nonatomic, retain) NSMutableDictionary* headerViewsForSections;
 @property (nonatomic, retain) NSIndexPath* indexPathToReachAfterRotation;
-@property (nonatomic, retain) NSIndexPath* selectedIndexPath;
+@property (nonatomic, copy) NSIndexPath* selectedIndexPath;
 
 - (void)updateNumberOfPages;
 - (void)adjustView;

@@ -12,7 +12,7 @@
 
 
 @interface CKTableViewController ()
-@property (nonatomic, retain) NSIndexPath *selectedIndexPath;
+@property (nonatomic, copy) NSIndexPath *selectedIndexPath;
 @end
 
 
