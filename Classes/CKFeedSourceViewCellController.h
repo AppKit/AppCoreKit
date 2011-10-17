@@ -6,7 +6,7 @@
 //  Copyright 2011 WhereCloud Inc. All rights reserved.
 //
 
-#import <CloudKit/CKStandardCellController.h>
+#import "CKStandardCellController.h"
 #import "CKModelObject.h"
 
 

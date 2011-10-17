@@ -6,7 +6,7 @@
 //  Copyright Wherecloud 2011. All rights reserved.
 //
 
-#import <CloudKit/CKTableViewController.h>
+#import "CKTableViewController.h"
 #import "CKObjectController.h"
 #import "CKObjectViewControllerFactory.h"
 #import "CKNSDictionary+TableViewAttributes.h"

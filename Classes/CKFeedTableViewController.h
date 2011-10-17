@@ -6,8 +6,8 @@
 //  Copyright 2011 WhereCloud Inc. All rights reserved.
 //
 
-#import <CloudKit/CKObjectTableViewController.h>
-#import <CloudKit/CKFeedSource.h>
+#import "CKObjectTableViewController.h"
+#import "CKFeedSource.h"
 
 
 @interface CKFeedTableViewController : CKObjectTableViewController {

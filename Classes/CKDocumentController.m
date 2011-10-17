@@ -7,7 +7,7 @@
 //
 
 #import "CKDocumentController.h"
-#import <CloudKit/CKDocument.h>
+#import "CKDocument.h"
 #import <UIKit/UITableView.h>
 #import "CKVersion.h"
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CKObjectController.h"
-#import <CloudKit/CKModelObserver.h>
+#import "CKModelObserver.h"
 
 
 @interface CKDocumentController : NSObject<CKObjectController> {

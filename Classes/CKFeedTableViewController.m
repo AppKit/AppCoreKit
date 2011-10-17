@@ -7,7 +7,7 @@
 //
 
 #import "CKFeedTableViewController.h"
-#import <CloudKit/CKDocumentController.h>
+#import "CKDocumentController.h"
 
 
 @implementation CKFeedTableViewController

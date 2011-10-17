@@ -7,13 +7,13 @@
 //
 
 #import "CKObjectTableViewController.h"
-#import <CloudKit/CKNSDateAdditions.h>
-#import <CloudKit/CKTableViewCellController.h>
+#import "CKNSDateAdditions.h"
+#import "CKTableViewCellController.h"
 #import <objc/runtime.h>
-#import <CloudKit/CKUIKeyboardInformation.h>
+#import "CKUIKeyboardInformation.h"
 #import <QuartzCore/QuartzCore.h>
-#import <CloudKit/MAZeroingWeakRef.h>
-#import <CloudKit/CKNSObject+bindings.h>
+#import "MAZeroingWeakRef.h"
+#import "CKNSObject+bindings.h"
 #import "CKVersion.h"
 
 static NSMutableDictionary* CKObjectTableViewControllerClassToIdentifier = nil;
