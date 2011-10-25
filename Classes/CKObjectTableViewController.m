@@ -790,16 +790,16 @@ static NSMutableDictionary* CKObjectTableViewControllerClassToIdentifier = nil;
 			return [_objectController headerTitleForSection:section];
 		}
 	//}
-	return @"";
+	return nil;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
 	//TODO : ask to _feedDataSource ???
-	return @"";
+	return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-	CGFloat height = 0;
+	CGFloat height = -1;
 	UIView* view = [self tableView:self.tableView viewForHeaderInSection:section];
 	if(view){
 		height = view.frame.size.height;
@@ -819,7 +819,7 @@ static NSMutableDictionary* CKObjectTableViewControllerClassToIdentifier = nil;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	//TODO : ask to _feedDataSource ???
-	return 0;
+	return -1;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
