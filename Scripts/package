@@ -56,6 +56,6 @@ lipo \
 # header files and the plist file  
 echo "Framework: Copying assets into current version..."
 
-cp -r Headers/CloudKit/* $FRAMEWORK_DIR/Headers/
+cp -r build/$BUILD_TYPE-iphoneos/Headers/CloudKit/* $FRAMEWORK_DIR/Headers/
 cp -r CloudKit.bundle $FRAMEWORK_DIR/Resources/
 cp CloudKit-Info.plist $FRAMEWORK_DIR/Resources/Info.plist
