@@ -230,7 +230,11 @@
 }
 
 - (CGPoint)pointForIndexPath:(NSIndexPath *)indexPath {
-	return CGPointMake((indexPath.column * self.columnWidth), (indexPath.row * self.rowHeight));
+	CGPoint point = CGPointMake((indexPath.column * self.columnWidth), (indexPath.row * self.rowHeight));
+    return point;
+    
+    //this code is not compiled correctly using Apple LLVM compiler 3.0 ...
+    //return CGPointMake((indexPath.column * self.columnWidth), (indexPath.row * self.rowHeight));
 }
 - (NSIndexPath *)indexPathForPoint:(CGPoint)point {
 	NSInteger row = point.y / self.rowHeight;
