@@ -256,13 +256,15 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 	UIView *headerView = [[self.sections objectAtIndex:section] headerView];
 	if (headerView) return headerView.frame.size.height;
-	return (tableView.style == UITableViewStyleGrouped) ? 34.0f : tableView.sectionHeaderHeight;
+    return -1;
+//	return (tableView.style == UITableViewStyleGrouped) ? 34.0f : tableView.sectionHeaderHeight;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	UIView *footerView = [[self.sections objectAtIndex:section] footerView];
 	if (footerView) return footerView.frame.size.height;
-	return (tableView.style == UITableViewStyleGrouped) ? 34.0f : tableView.sectionFooterHeight;
+    return -1;
+//	return (tableView.style == UITableViewStyleGrouped) ? 34.0f : tableView.sectionFooterHeight;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

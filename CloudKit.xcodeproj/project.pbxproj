@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,9 @@
 		4F27102411C187C2007F584E /* CKToggleSwitchCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F27102211C187C2007F584E /* CKToggleSwitchCellController.m */; };
 		4F44569911EE186C0080BC0F /* CKCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F44569711EE186C0080BC0F /* CKCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F44569A11EE186C0080BC0F /* CKCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44569811EE186C0080BC0F /* CKCompatibility.m */; };
-		4F4599C911FCE1AC00438B93 /* CKLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4599C711FCE1AC00438B93 /* CKLocationManager.h */; };
+		4F4599C911FCE1AC00438B93 /* CKLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4599C711FCE1AC00438B93 /* CKLocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F4599CA11FCE1AC00438B93 /* CKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4599C811FCE1AC00438B93 /* CKLocationManager.m */; };
-		4F4599CD11FCE25D00438B93 /* CKUIImage+Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4599CB11FCE25D00438B93 /* CKUIImage+Factory.h */; };
+		4F4599CD11FCE25D00438B93 /* CKUIImage+Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4599CB11FCE25D00438B93 /* CKUIImage+Factory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F4599CE11FCE25D00438B93 /* CKUIImage+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4599CC11FCE25D00438B93 /* CKUIImage+Factory.m */; };
 		4F497E5F11D404F700680E06 /* CKTextFieldCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F497E5D11D404F700680E06 /* CKTextFieldCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F497E6011D404F700680E06 /* CKTextFieldCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F497E5E11D404F700680E06 /* CKTextFieldCellController.m */; };
@@ -72,7 +72,6 @@
 		712E101210A4C83100DF6562 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		712E101310A4C83100DF6562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		712E101410A4C83100DF6562 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
-		712E101510A4C83100DF6562 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */; };
 		712E109910A4CB0000DF6562 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712E109810A4CB0000DF6562 /* libxml2.dylib */; };
 		712E10A310A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E10A210A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m */; };
 		712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7173D28F10A4BD98004E9621 /* SenTestingKit.framework */; };
@@ -102,7 +101,7 @@
 		7141A350111A601500CB74CA /* ASIS3ListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A33D111A601500CB74CA /* ASIS3ListRequest.m */; };
 		7141A351111A601500CB74CA /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A33E111A601500CB74CA /* ASIS3Request.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A352111A601500CB74CA /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A33F111A601500CB74CA /* ASIS3Request.m */; };
-		7150DF8811A1C0AF0050E284 /* CKUIToolbarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7150DF8611A1C0AF0050E284 /* CKUIToolbarAdditions.h */; };
+		7150DF8811A1C0AF0050E284 /* CKUIToolbarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7150DF8611A1C0AF0050E284 /* CKUIToolbarAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7150DF8911A1C0AF0050E284 /* CKUIToolbarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7150DF8711A1C0AF0050E284 /* CKUIToolbarAdditions.m */; };
 		7150E2A011A1E4650050E284 /* CKWebViewControllerRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 7150E29E11A1E4650050E284 /* CKWebViewControllerRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7150E2A111A1E4650050E284 /* CKWebViewControllerRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 7150E29F11A1E4650050E284 /* CKWebViewControllerRef.m */; };
@@ -161,7 +160,6 @@
 		71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */; };
-		71AD9EEF10A36F9200C88903 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */; };
 		71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
 		71ADA00B10A371C900C88903 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA00910A371C900C88903 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA00C10A371C900C88903 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA00A10A371C900C88903 /* Reachability.m */; };
@@ -211,6 +209,7 @@
 		71B1980810F40D22007F551A /* CKNSManagedObjectContext+Requests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1980610F40D22007F551A /* CKNSManagedObjectContext+Requests.m */; };
 		71E6660D1125D037005E6CEC /* CKUIColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E6660B1125D037005E6CEC /* CKUIColorAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71E6660E1125D037005E6CEC /* CKUIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E6660C1125D037005E6CEC /* CKUIColorAdditions.m */; };
+		71FAC84F14C8BE110044E38A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FAC84E14C8BE110044E38A /* libz.dylib */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -373,7 +372,6 @@
 		71AD9DF110A362C200C88903 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		71AD9DFB10A362E100C88903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		71AD9F1710A36FFE00C88903 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		71ADA00910A371C900C88903 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Apple/Reachability.h; sourceTree = "<group>"; };
 		71ADA00A10A371C900C88903 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Apple/Reachability.m; sourceTree = "<group>"; };
@@ -423,6 +421,7 @@
 		71D6C00B115440AA004C779E /* CloudKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CloudKit-Info.plist"; path = "../cloudkit/CloudKit-Info.plist"; sourceTree = SOURCE_ROOT; };
 		71E6660B1125D037005E6CEC /* CKUIColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUIColorAdditions.h; sourceTree = "<group>"; };
 		71E6660C1125D037005E6CEC /* CKUIColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKUIColorAdditions.m; sourceTree = "<group>"; };
+		71FAC84E14C8BE110044E38A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AA747D9E0F9514B9006C5449 /* CloudKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudKit_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libCloudKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCloudKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -439,7 +438,6 @@
 				712E101210A4C83100DF6562 /* SystemConfiguration.framework in Frameworks */,
 				712E101310A4C83100DF6562 /* UIKit.framework in Frameworks */,
 				712E101410A4C83100DF6562 /* libicucore.dylib in Frameworks */,
-				712E101510A4C83100DF6562 /* libz.1.2.3.dylib in Frameworks */,
 				712E109910A4CB0000DF6562 /* libxml2.dylib in Frameworks */,
 				712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */,
 				715E0B3010DADFE100AA4B07 /* CoreGraphics.framework in Frameworks */,
@@ -452,12 +450,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FAC84F14C8BE110044E38A /* libz.dylib in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				71AD9DE510A3629300C88903 /* AddressBook.framework in Frameworks */,
 				71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */,
 				71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */,
 				71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */,
-				71AD9EEF10A36F9200C88903 /* libz.1.2.3.dylib in Frameworks */,
 				71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */,
 				7173D29010A4BD98004E9621 /* SenTestingKit.framework in Frameworks */,
 				712E116210A4DBAB00DF6562 /* libxml2.dylib in Frameworks */,
@@ -514,9 +512,9 @@
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				71AD9DF110A362C200C88903 /* SystemConfiguration.framework */,
 				71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */,
-				71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */,
 				71AD9F1710A36FFE00C88903 /* libicucore.dylib */,
 				712E109810A4CB0000DF6562 /* libxml2.dylib */,
+				71FAC84E14C8BE110044E38A /* libz.dylib */,
 				7173D28F10A4BD98004E9621 /* SenTestingKit.framework */,
 				715E0B2A10DADFD300AA4B07 /* CoreGraphics.framework */,
 				71917B2A1199E7E300386EB5 /* MapKit.framework */,
@@ -939,7 +937,6 @@
 				71917AC21199C49A00386EB5 /* CKLayout.h in Headers */,
 				71917B381199E87A00386EB5 /* CKUINavigationControllerAdditions.h in Headers */,
 				71917BAF1199ED6A00386EB5 /* CKBundle.h in Headers */,
-				7150DF8811A1C0AF0050E284 /* CKUIToolbarAdditions.h in Headers */,
 				7150E2A011A1E4650050E284 /* CKWebViewControllerRef.h in Headers */,
 				4F4E0BF711ADB3A500CB220D /* CKUIView+Layout.h in Headers */,
 				712D6D1211AF20CB00A92D98 /* CKCache.h in Headers */,
@@ -961,13 +958,14 @@
 				4F07A6BE11D295A20099F51B /* CKOverlayView.h in Headers */,
 				4F497E5F11D404F700680E06 /* CKTextFieldCellController.h in Headers */,
 				4FB5463311DA8DA000DC7E6A /* CKImageButtonCellController.h in Headers */,
+				7150DF8811A1C0AF0050E284 /* CKUIToolbarAdditions.h in Headers */,
+				4F4599C911FCE1AC00438B93 /* CKLocationManager.h in Headers */,
+				4F4599CD11FCE25D00438B93 /* CKUIImage+Factory.h in Headers */,
 				4FB5479311DBBA4C00DC7E6A /* CKOverlayView+Factory.h in Headers */,
 				4F44569911EE186C0080BC0F /* CKCompatibility.h in Headers */,
 				4FB1695611F632D700C1CCD1 /* CKImageLoader.h in Headers */,
 				71993A5411F8C53D0056EC2C /* CKMultipartParser.h in Headers */,
 				71993A5811F8C54A0056EC2C /* CKNSData+Matching.h in Headers */,
-				4F4599C911FCE1AC00438B93 /* CKLocationManager.h in Headers */,
-				4F4599CD11FCE25D00438B93 /* CKUIImage+Factory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,11 +1015,16 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "WhereCloud Inc";
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CloudKit" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* CloudKit */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -1197,7 +1200,6 @@
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1240,10 +1242,10 @@
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
-				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CloudKit;
-				SDKROOT = iphoneos4.0;
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/CloudKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv6 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1262,10 +1264,10 @@
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
-				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CloudKit;
-				SDKROOT = iphoneos4.0;
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/CloudKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv6 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1282,7 +1284,6 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
@@ -1296,7 +1297,6 @@
 					"-framework",
 					UIKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1312,7 +1312,6 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = "UnitTests-Info.plist";
 				OTHER_LDFLAGS = (
@@ -1325,7 +1324,6 @@
 					"-framework",
 					UIKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
