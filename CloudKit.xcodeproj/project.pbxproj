@@ -21,6 +21,7 @@
 		710DF11510FFBC030063FB2C /* CKWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 710DF11110FFBC030063FB2C /* CKWebService.m */; };
 		7123DD76111A393F00F5DFB9 /* CKUIImage+Transformations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7123DD74111A393F00F5DFB9 /* CKUIImage+Transformations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7123DD77111A393F00F5DFB9 /* CKUIImage+Transformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7123DD75111A393F00F5DFB9 /* CKUIImage+Transformations.m */; };
+		712CB68114CA1D5500CF48AD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712CB68014CA1D5500CF48AD /* libz.dylib */; };
 		712E0FE110A4C74900DF6562 /* CKAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6610A35F4500C88903 /* CKAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E0FE210A4C74A00DF6562 /* CKAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D6710A35F4500C88903 /* CKAddressBook.m */; };
 		712E100F10A4C83100DF6562 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DE410A3629300C88903 /* AddressBook.framework */; };
@@ -29,7 +30,6 @@
 		712E101210A4C83100DF6562 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		712E101310A4C83100DF6562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		712E101410A4C83100DF6562 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
-		712E101510A4C83100DF6562 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */; };
 		712E109910A4CB0000DF6562 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712E109810A4CB0000DF6562 /* libxml2.dylib */; };
 		712E10A310A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E10A210A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m */; };
 		712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7173D28F10A4BD98004E9621 /* SenTestingKit.framework */; };
@@ -128,7 +128,6 @@
 		71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */; };
-		71AD9EEF10A36F9200C88903 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */; };
 		71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
 		71ADA00B10A371C900C88903 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA00910A371C900C88903 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA00C10A371C900C88903 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA00A10A371C900C88903 /* Reachability.m */; };
@@ -208,6 +207,7 @@
 		711CA2B7112A05A60084660F /* CKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKTableViewController.m; path = Classes/CKTableViewController.m; sourceTree = "<group>"; };
 		7123DD74111A393F00F5DFB9 /* CKUIImage+Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CKUIImage+Transformations.h"; path = "../cloudkit/Classes/CKUIImage+Transformations.h"; sourceTree = SOURCE_ROOT; };
 		7123DD75111A393F00F5DFB9 /* CKUIImage+Transformations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CKUIImage+Transformations.m"; path = "../cloudkit/Classes/CKUIImage+Transformations.m"; sourceTree = SOURCE_ROOT; };
+		712CB68014CA1D5500CF48AD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		712E100310A4C7E700DF6562 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		712E100410A4C7E700DF6562 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		712E109810A4CB0000DF6562 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -309,7 +309,6 @@
 		71AD9DF110A362C200C88903 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		71AD9DFB10A362E100C88903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		71AD9F1710A36FFE00C88903 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		71ADA00910A371C900C88903 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Apple/Reachability.h; sourceTree = "<group>"; };
 		71ADA00A10A371C900C88903 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Apple/Reachability.m; sourceTree = "<group>"; };
@@ -375,7 +374,6 @@
 				712E101210A4C83100DF6562 /* SystemConfiguration.framework in Frameworks */,
 				712E101310A4C83100DF6562 /* UIKit.framework in Frameworks */,
 				712E101410A4C83100DF6562 /* libicucore.dylib in Frameworks */,
-				712E101510A4C83100DF6562 /* libz.1.2.3.dylib in Frameworks */,
 				712E109910A4CB0000DF6562 /* libxml2.dylib in Frameworks */,
 				712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */,
 				715E0B3010DADFE100AA4B07 /* CoreGraphics.framework in Frameworks */,
@@ -388,12 +386,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712CB68114CA1D5500CF48AD /* libz.dylib in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				71AD9DE510A3629300C88903 /* AddressBook.framework in Frameworks */,
 				71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */,
 				71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */,
 				71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */,
-				71AD9EEF10A36F9200C88903 /* libz.1.2.3.dylib in Frameworks */,
 				71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */,
 				7173D29010A4BD98004E9621 /* SenTestingKit.framework in Frameworks */,
 				712E116210A4DBAB00DF6562 /* libxml2.dylib in Frameworks */,
@@ -445,7 +443,7 @@
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 				71AD9DF110A362C200C88903 /* SystemConfiguration.framework */,
 				71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */,
-				71AD9EEE10A36F9200C88903 /* libz.1.2.3.dylib */,
+				712CB68014CA1D5500CF48AD /* libz.dylib */,
 				71AD9F1710A36FFE00C88903 /* libicucore.dylib */,
 				712E109810A4CB0000DF6562 /* libxml2.dylib */,
 				7173D28F10A4BD98004E9621 /* SenTestingKit.framework */,
@@ -880,7 +878,11 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CloudKit" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* CloudKit */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -1087,8 +1089,8 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
-				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CloudKit;
-				SDKROOT = iphoneos3.1.3;
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/CloudKit;
+				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1106,8 +1108,8 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
-				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/CloudKit;
-				SDKROOT = iphoneos3.1.3;
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/CloudKit;
+				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
