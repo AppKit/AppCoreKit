@@ -7,22 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FE162E310FBD6D5002F5B37 /* CKAbstractCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE162DB10FBD6D5002F5B37 /* CKAbstractCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FE162E410FBD6D5002F5B37 /* CKAbstractCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE162DC10FBD6D5002F5B37 /* CKAbstractCellController.m */; };
-		4FE162E510FBD6D5002F5B37 /* CKButtonCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE162DD10FBD6D5002F5B37 /* CKButtonCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FE162E610FBD6D5002F5B37 /* CKButtonCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE162DE10FBD6D5002F5B37 /* CKButtonCellController.m */; };
-		4FE162E710FBD6D5002F5B37 /* CKImageCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE162DF10FBD6D5002F5B37 /* CKImageCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FE162E810FBD6D5002F5B37 /* CKImageCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE162E010FBD6D5002F5B37 /* CKImageCellController.m */; };
-		4FE162E910FBD6D5002F5B37 /* CKValueCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE162E110FBD6D5002F5B37 /* CKValueCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FE162EA10FBD6D5002F5B37 /* CKValueCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE162E210FBD6D5002F5B37 /* CKValueCellController.m */; };
-		710DF11210FFBC030063FB2C /* CKWebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 710DF10E10FFBC030063FB2C /* CKWebRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		710DF11310FFBC030063FB2C /* CKWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 710DF10F10FFBC030063FB2C /* CKWebRequest.m */; };
-		710DF11410FFBC030063FB2C /* CKWebService.h in Headers */ = {isa = PBXBuildFile; fileRef = 710DF11010FFBC030063FB2C /* CKWebService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		710DF11510FFBC030063FB2C /* CKWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 710DF11110FFBC030063FB2C /* CKWebService.m */; };
-		7123DD76111A393F00F5DFB9 /* CKUIImage+Transformations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7123DD74111A393F00F5DFB9 /* CKUIImage+Transformations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7123DD77111A393F00F5DFB9 /* CKUIImage+Transformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7123DD75111A393F00F5DFB9 /* CKUIImage+Transformations.m */; };
 		712CB68114CA1D5500CF48AD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712CB68014CA1D5500CF48AD /* libz.dylib */; };
-		712E0FE110A4C74900DF6562 /* CKAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6610A35F4500C88903 /* CKAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E0FE210A4C74A00DF6562 /* CKAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D6710A35F4500C88903 /* CKAddressBook.m */; };
 		712E100F10A4C83100DF6562 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DE410A3629300C88903 /* AddressBook.framework */; };
 		712E101010A4C83100DF6562 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */; };
@@ -34,33 +26,18 @@
 		712E10A310A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E10A210A4CB6B00DF6562 /* CKNSArrayAdditionsTestCase.m */; };
 		712E10F510A4D9BF00DF6562 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7173D28F10A4BD98004E9621 /* SenTestingKit.framework */; };
 		712E116210A4DBAB00DF6562 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 712E109810A4CB0000DF6562 /* libxml2.dylib */; };
-		712E7C6410D199A7008DC18C /* IFButtonCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C4810D199A7008DC18C /* IFButtonCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C6510D199A7008DC18C /* IFButtonCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C4910D199A7008DC18C /* IFButtonCellController.m */; };
-		712E7C6610D199A7008DC18C /* IFCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C4A10D199A7008DC18C /* IFCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		712E7C6710D199A7008DC18C /* IFCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C4B10D199A7008DC18C /* IFCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		712E7C6810D199A7008DC18C /* IFChoiceCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C4C10D199A7008DC18C /* IFChoiceCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C6910D199A7008DC18C /* IFChoiceCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C4D10D199A7008DC18C /* IFChoiceCellController.m */; };
-		712E7C6A10D199A7008DC18C /* IFChoiceTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C4E10D199A7008DC18C /* IFChoiceTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C6B10D199A7008DC18C /* IFChoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C4F10D199A7008DC18C /* IFChoiceTableViewController.m */; };
-		712E7C6C10D199A7008DC18C /* IFControlTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5010D199A7008DC18C /* IFControlTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C6D10D199A7008DC18C /* IFControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5110D199A7008DC18C /* IFControlTableViewCell.m */; };
-		712E7C6E10D199A7008DC18C /* IFGenericTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5210D199A7008DC18C /* IFGenericTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C6F10D199A7008DC18C /* IFGenericTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5310D199A7008DC18C /* IFGenericTableViewController.m */; };
-		712E7C7010D199A7008DC18C /* IFLinkCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5410D199A7008DC18C /* IFLinkCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7110D199A7008DC18C /* IFLinkCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5510D199A7008DC18C /* IFLinkCellController.m */; };
-		712E7C7210D199A7008DC18C /* IFNamedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5610D199A7008DC18C /* IFNamedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7310D199A7008DC18C /* IFNamedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5710D199A7008DC18C /* IFNamedImage.m */; };
-		712E7C7410D199A7008DC18C /* IFPreferencesModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5810D199A7008DC18C /* IFPreferencesModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7510D199A7008DC18C /* IFPreferencesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5910D199A7008DC18C /* IFPreferencesModel.m */; };
-		712E7C7610D199A7008DC18C /* IFSwitchCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5A10D199A7008DC18C /* IFSwitchCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7710D199A7008DC18C /* IFSwitchCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5B10D199A7008DC18C /* IFSwitchCellController.m */; };
-		712E7C7810D199A7008DC18C /* IFTemporaryModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5C10D199A7008DC18C /* IFTemporaryModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7910D199A7008DC18C /* IFTemporaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5D10D199A7008DC18C /* IFTemporaryModel.m */; };
-		712E7C7A10D199A7008DC18C /* IFTextCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C5E10D199A7008DC18C /* IFTextCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7B10D199A7008DC18C /* IFTextCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C5F10D199A7008DC18C /* IFTextCellController.m */; };
-		712E7C7C10D199A7008DC18C /* IFTextViewTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C6010D199A7008DC18C /* IFTextViewTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7D10D199A7008DC18C /* IFTextViewTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C6110D199A7008DC18C /* IFTextViewTableView.m */; };
-		712E7C7E10D199A7008DC18C /* IFValueCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E7C6210D199A7008DC18C /* IFValueCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		712E7C7F10D199A7008DC18C /* IFValueCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 712E7C6310D199A7008DC18C /* IFValueCellController.m */; };
 		713F4ABB10FB79C7005367AB /* CKStoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 713F4ABA10FB79C7005367AB /* CKStoreTestCase.m */; };
 		713F4AF410FB7BC9005367AB /* libCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libCloudKit.a */; };
@@ -68,114 +45,137 @@
 		713F4B0C10FB7C78005367AB /* CKNSDate+Conversions.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E0CC510DB073C00AA4B07 /* CKNSDate+Conversions.m */; };
 		713F4B0D10FB7C7A005367AB /* CKNSString+Validations.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E0CF410DB0AB300AA4B07 /* CKNSString+Validations.m */; };
 		713F4B1510FB7CB4005367AB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713F4B1410FB7CB4005367AB /* CoreData.framework */; };
-		7141A340111A601500CB74CA /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A32D111A601500CB74CA /* ASIAuthenticationDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7140447914CE12AF00FE9A56 /* CKUIImage+Transformations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7123DD74111A393F00F5DFB9 /* CKUIImage+Transformations.h */; };
+		7140447A14CE12AF00FE9A56 /* CKPickerView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 715CA158110E374300593672 /* CKPickerView.h */; };
+		7140447B14CE12AF00FE9A56 /* CKTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 711CA2B6112A05A60084660F /* CKTableViewController.h */; };
+		7140447C14CE12AF00FE9A56 /* CKAbstractCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FE162DB10FBD6D5002F5B37 /* CKAbstractCellController.h */; };
+		7140447D14CE12AF00FE9A56 /* CKButtonCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FE162DD10FBD6D5002F5B37 /* CKButtonCellController.h */; };
+		7140447E14CE12AF00FE9A56 /* CKImageCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FE162DF10FBD6D5002F5B37 /* CKImageCellController.h */; };
+		7140447F14CE12AF00FE9A56 /* CKValueCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FE162E110FBD6D5002F5B37 /* CKValueCellController.h */; };
+		7140448014CE12AF00FE9A56 /* CKAddressBook.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D6610A35F4500C88903 /* CKAddressBook.h */; };
+		7140448114CE12AF00FE9A56 /* CKDomain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 719F062710F6E749002955C0 /* CKDomain.h */; };
+		7140448214CE12AF00FE9A56 /* CKItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 719F062910F6E749002955C0 /* CKItem.h */; };
+		7140448314CE12AF00FE9A56 /* CKAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 719F05CC10F6A818002955C0 /* CKAttribute.h */; };
+		7140448414CE12AF00FE9A56 /* CKStore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 719F063910F6ED27002955C0 /* CKStore.h */; };
+		7140448514CE12AF00FE9A56 /* CKDictionaryFromAttributesTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ACFEB611237CD200E6F938 /* CKDictionaryFromAttributesTransformer.h */; };
+		7140448614CE12AF00FE9A56 /* CKAttributesDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 719093EF112474CD003489BB /* CKAttributesDictionary.h */; };
+		7140448714CE12AF00FE9A56 /* CKCoreDataManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71B1975710F3EC26007F551A /* CKCoreDataManager.h */; };
+		7140448814CE12AF00FE9A56 /* CKNSManagedObjectContext+Requests.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71B1980510F40D22007F551A /* CKNSManagedObjectContext+Requests.h */; };
+		7140448914CE12AF00FE9A56 /* CKWebRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 710DF10E10FFBC030063FB2C /* CKWebRequest.h */; };
+		7140448A14CE12AF00FE9A56 /* CKWebService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 710DF11010FFBC030063FB2C /* CKWebService.h */; };
+		7140448B14CE12AF00FE9A56 /* CKNSSetAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7173D28110A4B2FA004E9621 /* CKNSSetAdditions.h */; };
+		7140448C14CE12AF00FE9A56 /* CKNSArrayAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D6810A35F4500C88903 /* CKNSArrayAdditions.h */; };
+		7140448D14CE12AF00FE9A56 /* CKNSDataAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D6A10A35F4500C88903 /* CKNSDataAdditions.h */; };
+		7140448E14CE12AF00FE9A56 /* CKNSDateAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D6B10A35F4500C88903 /* CKNSDateAdditions.h */; };
+		7140448F14CE12AF00FE9A56 /* CKNSStringAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D6D10A35F4500C88903 /* CKNSStringAdditions.h */; };
+		7140449014CE12AF00FE9A56 /* CKDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D6F10A35F4500C88903 /* CKDebug.h */; };
+		7140449114CE12AF00FE9A56 /* CKNSData+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D7010A35F4500C88903 /* CKNSData+Base64.h */; };
+		7140449214CE12AF00FE9A56 /* CKNSData+SHA1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D7210A35F4500C88903 /* CKNSData+SHA1.h */; };
+		7140449314CE12AF00FE9A56 /* CKNSString+URIQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71AD9D7410A35F4500C88903 /* CKNSString+URIQuery.h */; };
+		7140449414CE12AF00FE9A56 /* CKNSDate+Calculations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 715E0CB910DB063000AA4B07 /* CKNSDate+Calculations.h */; };
+		7140449514CE12AF00FE9A56 /* CKNSDate+Conversions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 715E0CC410DB073C00AA4B07 /* CKNSDate+Conversions.h */; };
+		7140449614CE12AF00FE9A56 /* CKNSString+Validations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 715E0CF310DB0AB300AA4B07 /* CKNSString+Validations.h */; };
+		7140449714CE12AF00FE9A56 /* CKUIColorAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71E6660B1125D037005E6CEC /* CKUIColorAdditions.h */; };
+		7140449814CE12AF00FE9A56 /* IFButtonCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C4810D199A7008DC18C /* IFButtonCellController.h */; };
+		7140449914CE12AF00FE9A56 /* IFCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C4A10D199A7008DC18C /* IFCellController.h */; };
+		7140449A14CE12AF00FE9A56 /* IFCellModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C4B10D199A7008DC18C /* IFCellModel.h */; };
+		7140449B14CE12AF00FE9A56 /* IFChoiceCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C4C10D199A7008DC18C /* IFChoiceCellController.h */; };
+		7140449C14CE12AF00FE9A56 /* IFChoiceTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C4E10D199A7008DC18C /* IFChoiceTableViewController.h */; };
+		7140449D14CE12AF00FE9A56 /* IFControlTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5010D199A7008DC18C /* IFControlTableViewCell.h */; };
+		7140449E14CE12AF00FE9A56 /* IFGenericTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5210D199A7008DC18C /* IFGenericTableViewController.h */; };
+		7140449F14CE12AF00FE9A56 /* IFLinkCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5410D199A7008DC18C /* IFLinkCellController.h */; };
+		714044A014CE12AF00FE9A56 /* IFNamedImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5610D199A7008DC18C /* IFNamedImage.h */; };
+		714044A114CE12AF00FE9A56 /* IFPreferencesModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5810D199A7008DC18C /* IFPreferencesModel.h */; };
+		714044A214CE12AF00FE9A56 /* IFSwitchCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5A10D199A7008DC18C /* IFSwitchCellController.h */; };
+		714044A314CE12AF00FE9A56 /* IFTemporaryModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5C10D199A7008DC18C /* IFTemporaryModel.h */; };
+		714044A414CE12AF00FE9A56 /* IFTextCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C5E10D199A7008DC18C /* IFTextCellController.h */; };
+		714044A514CE12AF00FE9A56 /* IFTextViewTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C6010D199A7008DC18C /* IFTextViewTableView.h */; };
+		714044A614CE12AF00FE9A56 /* IFValueCellController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 712E7C6210D199A7008DC18C /* IFValueCellController.h */; };
+		714044A714CE12AF00FE9A56 /* CXMLDocument_CreationExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA05410A3740400C88903 /* CXMLDocument_CreationExtensions.h */; };
+		714044A814CE12AF00FE9A56 /* CXMLNode_CreationExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA05610A3740400C88903 /* CXMLNode_CreationExtensions.h */; };
+		714044A914CE12AF00FE9A56 /* CXMLDocument_PrivateExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA05810A3740400C88903 /* CXMLDocument_PrivateExtensions.h */; };
+		714044AA14CE12AF00FE9A56 /* CXMLDocument.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA05A10A3740400C88903 /* CXMLDocument.h */; };
+		714044AB14CE12AF00FE9A56 /* CXMLElement_CreationExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA05C10A3740400C88903 /* CXMLElement_CreationExtensions.h */; };
+		714044AC14CE12AF00FE9A56 /* CXMLElement_ElementTreeExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA05E10A3740400C88903 /* CXMLElement_ElementTreeExtensions.h */; };
+		714044AD14CE12AF00FE9A56 /* CXMLElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA06010A3740400C88903 /* CXMLElement.h */; };
+		714044AE14CE12AF00FE9A56 /* CXMLNode_PrivateExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA06210A3740400C88903 /* CXMLNode_PrivateExtensions.h */; };
+		714044AF14CE12AF00FE9A56 /* CXMLNode_XPathExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA06410A3740400C88903 /* CXMLNode_XPathExtensions.h */; };
+		714044B014CE12AF00FE9A56 /* CXMLNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA06610A3740400C88903 /* CXMLNode.h */; };
+		714044B114CE12AF00FE9A56 /* TouchXML.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA06B10A3740400C88903 /* TouchXML.h */; };
+		714044B214CE12AF00FE9A56 /* CDataScanner.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA02510A372D200C88903 /* CDataScanner.h */; };
+		714044B314CE12AF00FE9A56 /* CDataScanner_Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA02810A372D200C88903 /* CDataScanner_Extensions.h */; };
+		714044B414CE12AF00FE9A56 /* NSCharacterSet_Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA02A10A372D200C88903 /* NSCharacterSet_Extensions.h */; };
+		714044B514CE12AF00FE9A56 /* NSDictionary_JSONExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA02C10A372D200C88903 /* NSDictionary_JSONExtensions.h */; };
+		714044B614CE12AF00FE9A56 /* NSScanner_Extensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA02E10A372D200C88903 /* NSScanner_Extensions.h */; };
+		714044B714CE12AF00FE9A56 /* CJSONDeserializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA03110A372D200C88903 /* CJSONDeserializer.h */; };
+		714044B814CE12AF00FE9A56 /* CJSONScanner.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA03310A372D200C88903 /* CJSONScanner.h */; };
+		714044B914CE12AF00FE9A56 /* CJSONSerializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA03510A372D200C88903 /* CJSONSerializer.h */; };
+		714044BA14CE12AF00FE9A56 /* RegexKitLite.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA01E10A3727700C88903 /* RegexKitLite.h */; };
+		714044BB14CE12AF00FE9A56 /* Reachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA00910A371C900C88903 /* Reachability.h */; };
+		714044BC14CE12AF00FE9A56 /* ASIAuthenticationDialog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A32D111A601500CB74CA /* ASIAuthenticationDialog.h */; };
+		714044BD14CE12AF00FE9A56 /* ASIFormDataRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A32F111A601500CB74CA /* ASIFormDataRequest.h */; };
+		714044BE14CE12AF00FE9A56 /* ASIHTTPRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A331111A601500CB74CA /* ASIHTTPRequest.h */; };
+		714044BF14CE12AF00FE9A56 /* ASIHTTPRequestConfig.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A333111A601500CB74CA /* ASIHTTPRequestConfig.h */; };
+		714044C014CE12AF00FE9A56 /* ASIInputStream.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A334111A601500CB74CA /* ASIInputStream.h */; };
+		714044C114CE12AF00FE9A56 /* ASINetworkQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A336111A601500CB74CA /* ASINetworkQueue.h */; };
+		714044C214CE12AF00FE9A56 /* ASINSStringAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A338111A601500CB74CA /* ASINSStringAdditions.h */; };
+		714044C314CE12AF00FE9A56 /* ASIS3BucketObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A33A111A601500CB74CA /* ASIS3BucketObject.h */; };
+		714044C414CE12AF00FE9A56 /* ASIS3ListRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A33C111A601500CB74CA /* ASIS3ListRequest.h */; };
+		714044C514CE12AF00FE9A56 /* ASIS3Request.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7141A33E111A601500CB74CA /* ASIS3Request.h */; };
 		7141A341111A601500CB74CA /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A32E111A601500CB74CA /* ASIAuthenticationDialog.m */; };
-		7141A342111A601500CB74CA /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A32F111A601500CB74CA /* ASIFormDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A343111A601500CB74CA /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A330111A601500CB74CA /* ASIFormDataRequest.m */; };
-		7141A344111A601500CB74CA /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A331111A601500CB74CA /* ASIHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A345111A601500CB74CA /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A332111A601500CB74CA /* ASIHTTPRequest.m */; };
-		7141A346111A601500CB74CA /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A333111A601500CB74CA /* ASIHTTPRequestConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7141A347111A601500CB74CA /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A334111A601500CB74CA /* ASIInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A348111A601500CB74CA /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A335111A601500CB74CA /* ASIInputStream.m */; };
-		7141A349111A601500CB74CA /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A336111A601500CB74CA /* ASINetworkQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A34A111A601500CB74CA /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A337111A601500CB74CA /* ASINetworkQueue.m */; };
-		7141A34B111A601500CB74CA /* ASINSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A338111A601500CB74CA /* ASINSStringAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A34C111A601500CB74CA /* ASINSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A339111A601500CB74CA /* ASINSStringAdditions.m */; };
-		7141A34D111A601500CB74CA /* ASIS3BucketObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A33A111A601500CB74CA /* ASIS3BucketObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A34E111A601500CB74CA /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A33B111A601500CB74CA /* ASIS3BucketObject.m */; };
-		7141A34F111A601500CB74CA /* ASIS3ListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A33C111A601500CB74CA /* ASIS3ListRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A350111A601500CB74CA /* ASIS3ListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A33D111A601500CB74CA /* ASIS3ListRequest.m */; };
-		7141A351111A601500CB74CA /* ASIS3Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 7141A33E111A601500CB74CA /* ASIS3Request.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7141A352111A601500CB74CA /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 7141A33F111A601500CB74CA /* ASIS3Request.m */; };
 		715CA159110E374300593672 /* CKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 715CA157110E374300593672 /* CKPickerView.m */; };
-		715CA15A110E374300593672 /* CKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 715CA158110E374300593672 /* CKPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		715E0A7E10DADE5900AA4B07 /* CKNSDateAdditionsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 715E0A7D10DADE5900AA4B07 /* CKNSDateAdditionsTestCase.m */; };
 		715E0B2B10DADFD300AA4B07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E0B2A10DADFD300AA4B07 /* CoreGraphics.framework */; };
 		715E0B3010DADFE100AA4B07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715E0B2A10DADFD300AA4B07 /* CoreGraphics.framework */; };
-		715E0CBC10DB069000AA4B07 /* CKNSDate+Calculations.h in Headers */ = {isa = PBXBuildFile; fileRef = 715E0CB910DB063000AA4B07 /* CKNSDate+Calculations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		715E0CCE10DB07B100AA4B07 /* CKNSDate+Conversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 715E0CC410DB073C00AA4B07 /* CKNSDate+Conversions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		715E0CF810DB0BDE00AA4B07 /* CKNSString+Validations.h in Headers */ = {isa = PBXBuildFile; fileRef = 715E0CF310DB0AB300AA4B07 /* CKNSString+Validations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7173D28310A4B2FA004E9621 /* CKNSSetAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7173D28110A4B2FA004E9621 /* CKNSSetAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7173D28410A4B2FA004E9621 /* CKNSSetAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7173D28210A4B2FA004E9621 /* CKNSSetAdditions.m */; };
 		7173D29010A4BD98004E9621 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7173D28F10A4BD98004E9621 /* SenTestingKit.framework */; };
-		719093F1112474CD003489BB /* CKAttributesDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 719093EF112474CD003489BB /* CKAttributesDictionary.h */; };
 		719093F2112474CD003489BB /* CKAttributesDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 719093F0112474CD003489BB /* CKAttributesDictionary.m */; };
-		719F05CE10F6A818002955C0 /* CKAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 719F05CC10F6A818002955C0 /* CKAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		719F05CF10F6A818002955C0 /* CKAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F05CD10F6A818002955C0 /* CKAttribute.m */; };
-		719F062B10F6E749002955C0 /* CKDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 719F062710F6E749002955C0 /* CKDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		719F062C10F6E749002955C0 /* CKDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F062810F6E749002955C0 /* CKDomain.m */; };
-		719F062D10F6E749002955C0 /* CKItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 719F062910F6E749002955C0 /* CKItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		719F062E10F6E749002955C0 /* CKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F062A10F6E749002955C0 /* CKItem.m */; };
-		719F063B10F6ED27002955C0 /* CKStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 719F063910F6ED27002955C0 /* CKStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		719F067A10F6F39E002955C0 /* CKStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F063A10F6ED27002955C0 /* CKStore.m */; };
-		71ACFEB811237CD200E6F938 /* CKDictionaryFromAttributesTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ACFEB611237CD200E6F938 /* CKDictionaryFromAttributesTransformer.h */; };
 		71ACFEB911237CD200E6F938 /* CKDictionaryFromAttributesTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ACFEB711237CD200E6F938 /* CKDictionaryFromAttributesTransformer.m */; };
-		71AD9D7810A35F4600C88903 /* CKNSArrayAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6810A35F4500C88903 /* CKNSArrayAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71AD9D7910A35F4600C88903 /* CKNSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D6910A35F4500C88903 /* CKNSArrayAdditions.m */; };
-		71AD9D7A10A35F4600C88903 /* CKNSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6A10A35F4500C88903 /* CKNSDataAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71AD9D7B10A35F4600C88903 /* CKNSDateAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6B10A35F4500C88903 /* CKNSDateAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71AD9D7D10A35F4600C88903 /* CKNSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6D10A35F4500C88903 /* CKNSStringAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71AD9D7E10A35F4600C88903 /* CKNSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D6E10A35F4500C88903 /* CKNSStringAdditions.m */; };
-		71AD9D7F10A35F4600C88903 /* CKDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D6F10A35F4500C88903 /* CKDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71AD9D8010A35F4600C88903 /* CKNSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D7010A35F4500C88903 /* CKNSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71AD9D8110A35F4600C88903 /* CKNSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D7110A35F4500C88903 /* CKNSData+Base64.m */; };
-		71AD9D8210A35F4600C88903 /* CKNSData+SHA1.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D7210A35F4500C88903 /* CKNSData+SHA1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71AD9D8310A35F4600C88903 /* CKNSData+SHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D7310A35F4500C88903 /* CKNSData+SHA1.m */; };
-		71AD9D8410A35F4600C88903 /* CKNSString+URIQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AD9D7410A35F4500C88903 /* CKNSString+URIQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71AD9D8510A35F4600C88903 /* CKNSString+URIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AD9D7510A35F4500C88903 /* CKNSString+URIQuery.m */; };
-		71AD9D9410A361EE00C88903 /* CloudKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CloudKit_Prefix.pch */; settings = {ATTRIBUTES = (); }; };
 		71AD9DE510A3629300C88903 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DE410A3629300C88903 /* AddressBook.framework */; };
 		71AD9DF210A362C200C88903 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DF110A362C200C88903 /* SystemConfiguration.framework */; };
 		71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */; };
 		71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
-		71ADA00B10A371C900C88903 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA00910A371C900C88903 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA00C10A371C900C88903 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA00A10A371C900C88903 /* Reachability.m */; };
-		71ADA02010A3727700C88903 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA01E10A3727700C88903 /* RegexKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA02110A3727700C88903 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA01F10A3727700C88903 /* RegexKitLite.m */; };
-		71ADA03710A372D200C88903 /* CDataScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA02510A372D200C88903 /* CDataScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA03810A372D200C88903 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA02610A372D200C88903 /* CDataScanner.m */; };
-		71ADA03910A372D200C88903 /* CDataScanner_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA02810A372D200C88903 /* CDataScanner_Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA03A10A372D200C88903 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA02910A372D200C88903 /* CDataScanner_Extensions.m */; };
-		71ADA03B10A372D200C88903 /* NSCharacterSet_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA02A10A372D200C88903 /* NSCharacterSet_Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA03C10A372D200C88903 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA02B10A372D200C88903 /* NSCharacterSet_Extensions.m */; };
-		71ADA03D10A372D200C88903 /* NSDictionary_JSONExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA02C10A372D200C88903 /* NSDictionary_JSONExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA03E10A372D200C88903 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA02D10A372D200C88903 /* NSDictionary_JSONExtensions.m */; };
-		71ADA03F10A372D200C88903 /* NSScanner_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA02E10A372D200C88903 /* NSScanner_Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA04010A372D200C88903 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA02F10A372D200C88903 /* NSScanner_Extensions.m */; };
-		71ADA04110A372D200C88903 /* CJSONDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA03110A372D200C88903 /* CJSONDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA04210A372D200C88903 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA03210A372D200C88903 /* CJSONDeserializer.m */; };
-		71ADA04310A372D200C88903 /* CJSONScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA03310A372D200C88903 /* CJSONScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA04410A372D200C88903 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA03410A372D200C88903 /* CJSONScanner.m */; };
-		71ADA04510A372D200C88903 /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA03510A372D200C88903 /* CJSONSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA04610A372D200C88903 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA03610A372D200C88903 /* CJSONSerializer.m */; };
-		71ADA06C10A3740400C88903 /* CXMLDocument_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA05410A3740400C88903 /* CXMLDocument_CreationExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA06D10A3740400C88903 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05510A3740400C88903 /* CXMLDocument_CreationExtensions.m */; };
-		71ADA06E10A3740400C88903 /* CXMLNode_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA05610A3740400C88903 /* CXMLNode_CreationExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA06F10A3740400C88903 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05710A3740400C88903 /* CXMLNode_CreationExtensions.m */; };
-		71ADA07010A3740400C88903 /* CXMLDocument_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA05810A3740400C88903 /* CXMLDocument_PrivateExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07110A3740400C88903 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05910A3740400C88903 /* CXMLDocument_PrivateExtensions.m */; };
-		71ADA07210A3740400C88903 /* CXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA05A10A3740400C88903 /* CXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07310A3740400C88903 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05B10A3740400C88903 /* CXMLDocument.m */; };
-		71ADA07410A3740400C88903 /* CXMLElement_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA05C10A3740400C88903 /* CXMLElement_CreationExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07510A3740400C88903 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05D10A3740400C88903 /* CXMLElement_CreationExtensions.m */; };
-		71ADA07610A3740400C88903 /* CXMLElement_ElementTreeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA05E10A3740400C88903 /* CXMLElement_ElementTreeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07710A3740400C88903 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05F10A3740400C88903 /* CXMLElement_ElementTreeExtensions.m */; };
-		71ADA07810A3740400C88903 /* CXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA06010A3740400C88903 /* CXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07910A3740400C88903 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA06110A3740400C88903 /* CXMLElement.m */; };
-		71ADA07A10A3740400C88903 /* CXMLNode_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA06210A3740400C88903 /* CXMLNode_PrivateExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07B10A3740400C88903 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA06310A3740400C88903 /* CXMLNode_PrivateExtensions.m */; };
-		71ADA07C10A3740400C88903 /* CXMLNode_XPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA06410A3740400C88903 /* CXMLNode_XPathExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07D10A3740400C88903 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA06510A3740400C88903 /* CXMLNode_XPathExtensions.m */; };
-		71ADA07E10A3740400C88903 /* CXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA06610A3740400C88903 /* CXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71ADA07F10A3740400C88903 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA06710A3740400C88903 /* CXMLNode.m */; };
-		71ADA08210A3740400C88903 /* TouchXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ADA06B10A3740400C88903 /* TouchXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71AE060D1105107300F39258 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713F4B1410FB7CB4005367AB /* CoreData.framework */; };
-		71B1975910F3EC26007F551A /* CKCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B1975710F3EC26007F551A /* CKCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71B1975A10F3EC26007F551A /* CKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1975810F3EC26007F551A /* CKCoreDataManager.m */; };
-		71B1980710F40D22007F551A /* CKNSManagedObjectContext+Requests.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B1980510F40D22007F551A /* CKNSManagedObjectContext+Requests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71B1980810F40D22007F551A /* CKNSManagedObjectContext+Requests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B1980610F40D22007F551A /* CKNSManagedObjectContext+Requests.m */; };
-		71E6660D1125D037005E6CEC /* CKUIColorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E6660B1125D037005E6CEC /* CKUIColorAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71E6660E1125D037005E6CEC /* CKUIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E6660C1125D037005E6CEC /* CKUIColorAdditions.m */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +189,95 @@
 			remoteInfo = CloudKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7140447814CE126F00FE9A56 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/CloudKit;
+			dstSubfolderSpec = 16;
+			files = (
+				7140447914CE12AF00FE9A56 /* CKUIImage+Transformations.h in CopyFiles */,
+				7140447A14CE12AF00FE9A56 /* CKPickerView.h in CopyFiles */,
+				7140447B14CE12AF00FE9A56 /* CKTableViewController.h in CopyFiles */,
+				7140447C14CE12AF00FE9A56 /* CKAbstractCellController.h in CopyFiles */,
+				7140447D14CE12AF00FE9A56 /* CKButtonCellController.h in CopyFiles */,
+				7140447E14CE12AF00FE9A56 /* CKImageCellController.h in CopyFiles */,
+				7140447F14CE12AF00FE9A56 /* CKValueCellController.h in CopyFiles */,
+				7140448014CE12AF00FE9A56 /* CKAddressBook.h in CopyFiles */,
+				7140448114CE12AF00FE9A56 /* CKDomain.h in CopyFiles */,
+				7140448214CE12AF00FE9A56 /* CKItem.h in CopyFiles */,
+				7140448314CE12AF00FE9A56 /* CKAttribute.h in CopyFiles */,
+				7140448414CE12AF00FE9A56 /* CKStore.h in CopyFiles */,
+				7140448514CE12AF00FE9A56 /* CKDictionaryFromAttributesTransformer.h in CopyFiles */,
+				7140448614CE12AF00FE9A56 /* CKAttributesDictionary.h in CopyFiles */,
+				7140448714CE12AF00FE9A56 /* CKCoreDataManager.h in CopyFiles */,
+				7140448814CE12AF00FE9A56 /* CKNSManagedObjectContext+Requests.h in CopyFiles */,
+				7140448914CE12AF00FE9A56 /* CKWebRequest.h in CopyFiles */,
+				7140448A14CE12AF00FE9A56 /* CKWebService.h in CopyFiles */,
+				7140448B14CE12AF00FE9A56 /* CKNSSetAdditions.h in CopyFiles */,
+				7140448C14CE12AF00FE9A56 /* CKNSArrayAdditions.h in CopyFiles */,
+				7140448D14CE12AF00FE9A56 /* CKNSDataAdditions.h in CopyFiles */,
+				7140448E14CE12AF00FE9A56 /* CKNSDateAdditions.h in CopyFiles */,
+				7140448F14CE12AF00FE9A56 /* CKNSStringAdditions.h in CopyFiles */,
+				7140449014CE12AF00FE9A56 /* CKDebug.h in CopyFiles */,
+				7140449114CE12AF00FE9A56 /* CKNSData+Base64.h in CopyFiles */,
+				7140449214CE12AF00FE9A56 /* CKNSData+SHA1.h in CopyFiles */,
+				7140449314CE12AF00FE9A56 /* CKNSString+URIQuery.h in CopyFiles */,
+				7140449414CE12AF00FE9A56 /* CKNSDate+Calculations.h in CopyFiles */,
+				7140449514CE12AF00FE9A56 /* CKNSDate+Conversions.h in CopyFiles */,
+				7140449614CE12AF00FE9A56 /* CKNSString+Validations.h in CopyFiles */,
+				7140449714CE12AF00FE9A56 /* CKUIColorAdditions.h in CopyFiles */,
+				7140449814CE12AF00FE9A56 /* IFButtonCellController.h in CopyFiles */,
+				7140449914CE12AF00FE9A56 /* IFCellController.h in CopyFiles */,
+				7140449A14CE12AF00FE9A56 /* IFCellModel.h in CopyFiles */,
+				7140449B14CE12AF00FE9A56 /* IFChoiceCellController.h in CopyFiles */,
+				7140449C14CE12AF00FE9A56 /* IFChoiceTableViewController.h in CopyFiles */,
+				7140449D14CE12AF00FE9A56 /* IFControlTableViewCell.h in CopyFiles */,
+				7140449E14CE12AF00FE9A56 /* IFGenericTableViewController.h in CopyFiles */,
+				7140449F14CE12AF00FE9A56 /* IFLinkCellController.h in CopyFiles */,
+				714044A014CE12AF00FE9A56 /* IFNamedImage.h in CopyFiles */,
+				714044A114CE12AF00FE9A56 /* IFPreferencesModel.h in CopyFiles */,
+				714044A214CE12AF00FE9A56 /* IFSwitchCellController.h in CopyFiles */,
+				714044A314CE12AF00FE9A56 /* IFTemporaryModel.h in CopyFiles */,
+				714044A414CE12AF00FE9A56 /* IFTextCellController.h in CopyFiles */,
+				714044A514CE12AF00FE9A56 /* IFTextViewTableView.h in CopyFiles */,
+				714044A614CE12AF00FE9A56 /* IFValueCellController.h in CopyFiles */,
+				714044A714CE12AF00FE9A56 /* CXMLDocument_CreationExtensions.h in CopyFiles */,
+				714044A814CE12AF00FE9A56 /* CXMLNode_CreationExtensions.h in CopyFiles */,
+				714044A914CE12AF00FE9A56 /* CXMLDocument_PrivateExtensions.h in CopyFiles */,
+				714044AA14CE12AF00FE9A56 /* CXMLDocument.h in CopyFiles */,
+				714044AB14CE12AF00FE9A56 /* CXMLElement_CreationExtensions.h in CopyFiles */,
+				714044AC14CE12AF00FE9A56 /* CXMLElement_ElementTreeExtensions.h in CopyFiles */,
+				714044AD14CE12AF00FE9A56 /* CXMLElement.h in CopyFiles */,
+				714044AE14CE12AF00FE9A56 /* CXMLNode_PrivateExtensions.h in CopyFiles */,
+				714044AF14CE12AF00FE9A56 /* CXMLNode_XPathExtensions.h in CopyFiles */,
+				714044B014CE12AF00FE9A56 /* CXMLNode.h in CopyFiles */,
+				714044B114CE12AF00FE9A56 /* TouchXML.h in CopyFiles */,
+				714044B214CE12AF00FE9A56 /* CDataScanner.h in CopyFiles */,
+				714044B314CE12AF00FE9A56 /* CDataScanner_Extensions.h in CopyFiles */,
+				714044B414CE12AF00FE9A56 /* NSCharacterSet_Extensions.h in CopyFiles */,
+				714044B514CE12AF00FE9A56 /* NSDictionary_JSONExtensions.h in CopyFiles */,
+				714044B614CE12AF00FE9A56 /* NSScanner_Extensions.h in CopyFiles */,
+				714044B714CE12AF00FE9A56 /* CJSONDeserializer.h in CopyFiles */,
+				714044B814CE12AF00FE9A56 /* CJSONScanner.h in CopyFiles */,
+				714044B914CE12AF00FE9A56 /* CJSONSerializer.h in CopyFiles */,
+				714044BA14CE12AF00FE9A56 /* RegexKitLite.h in CopyFiles */,
+				714044BB14CE12AF00FE9A56 /* Reachability.h in CopyFiles */,
+				714044BC14CE12AF00FE9A56 /* ASIAuthenticationDialog.h in CopyFiles */,
+				714044BD14CE12AF00FE9A56 /* ASIFormDataRequest.h in CopyFiles */,
+				714044BE14CE12AF00FE9A56 /* ASIHTTPRequest.h in CopyFiles */,
+				714044BF14CE12AF00FE9A56 /* ASIHTTPRequestConfig.h in CopyFiles */,
+				714044C014CE12AF00FE9A56 /* ASIInputStream.h in CopyFiles */,
+				714044C114CE12AF00FE9A56 /* ASINetworkQueue.h in CopyFiles */,
+				714044C214CE12AF00FE9A56 /* ASINSStringAdditions.h in CopyFiles */,
+				714044C314CE12AF00FE9A56 /* ASIS3BucketObject.h in CopyFiles */,
+				714044C414CE12AF00FE9A56 /* ASIS3ListRequest.h in CopyFiles */,
+				714044C514CE12AF00FE9A56 /* ASIS3Request.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4FE162DB10FBD6D5002F5B37 /* CKAbstractCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKAbstractCellController.h; path = Classes/CKAbstractCellController.h; sourceTree = "<group>"; };
@@ -746,93 +835,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		D2AAC07A0554694100DB518D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71AD9D7810A35F4600C88903 /* CKNSArrayAdditions.h in Headers */,
-				71AD9D7A10A35F4600C88903 /* CKNSDataAdditions.h in Headers */,
-				71AD9D7B10A35F4600C88903 /* CKNSDateAdditions.h in Headers */,
-				71AD9D7D10A35F4600C88903 /* CKNSStringAdditions.h in Headers */,
-				71AD9D7F10A35F4600C88903 /* CKDebug.h in Headers */,
-				71AD9D8010A35F4600C88903 /* CKNSData+Base64.h in Headers */,
-				71AD9D8210A35F4600C88903 /* CKNSData+SHA1.h in Headers */,
-				71AD9D8410A35F4600C88903 /* CKNSString+URIQuery.h in Headers */,
-				71AD9D9410A361EE00C88903 /* CloudKit_Prefix.pch in Headers */,
-				71ADA00B10A371C900C88903 /* Reachability.h in Headers */,
-				71ADA02010A3727700C88903 /* RegexKitLite.h in Headers */,
-				71ADA03710A372D200C88903 /* CDataScanner.h in Headers */,
-				71ADA03910A372D200C88903 /* CDataScanner_Extensions.h in Headers */,
-				71ADA03B10A372D200C88903 /* NSCharacterSet_Extensions.h in Headers */,
-				71ADA03D10A372D200C88903 /* NSDictionary_JSONExtensions.h in Headers */,
-				71ADA03F10A372D200C88903 /* NSScanner_Extensions.h in Headers */,
-				71ADA04110A372D200C88903 /* CJSONDeserializer.h in Headers */,
-				71ADA04310A372D200C88903 /* CJSONScanner.h in Headers */,
-				71ADA04510A372D200C88903 /* CJSONSerializer.h in Headers */,
-				71ADA06C10A3740400C88903 /* CXMLDocument_CreationExtensions.h in Headers */,
-				71ADA06E10A3740400C88903 /* CXMLNode_CreationExtensions.h in Headers */,
-				71ADA07010A3740400C88903 /* CXMLDocument_PrivateExtensions.h in Headers */,
-				71ADA07210A3740400C88903 /* CXMLDocument.h in Headers */,
-				71ADA07410A3740400C88903 /* CXMLElement_CreationExtensions.h in Headers */,
-				71ADA07610A3740400C88903 /* CXMLElement_ElementTreeExtensions.h in Headers */,
-				71ADA07810A3740400C88903 /* CXMLElement.h in Headers */,
-				71ADA07A10A3740400C88903 /* CXMLNode_PrivateExtensions.h in Headers */,
-				71ADA07C10A3740400C88903 /* CXMLNode_XPathExtensions.h in Headers */,
-				71ADA07E10A3740400C88903 /* CXMLNode.h in Headers */,
-				71ADA08210A3740400C88903 /* TouchXML.h in Headers */,
-				7173D28310A4B2FA004E9621 /* CKNSSetAdditions.h in Headers */,
-				712E0FE110A4C74900DF6562 /* CKAddressBook.h in Headers */,
-				712E7C6410D199A7008DC18C /* IFButtonCellController.h in Headers */,
-				712E7C6610D199A7008DC18C /* IFCellController.h in Headers */,
-				712E7C6710D199A7008DC18C /* IFCellModel.h in Headers */,
-				712E7C6810D199A7008DC18C /* IFChoiceCellController.h in Headers */,
-				712E7C6A10D199A7008DC18C /* IFChoiceTableViewController.h in Headers */,
-				712E7C6C10D199A7008DC18C /* IFControlTableViewCell.h in Headers */,
-				712E7C6E10D199A7008DC18C /* IFGenericTableViewController.h in Headers */,
-				712E7C7010D199A7008DC18C /* IFLinkCellController.h in Headers */,
-				712E7C7210D199A7008DC18C /* IFNamedImage.h in Headers */,
-				712E7C7410D199A7008DC18C /* IFPreferencesModel.h in Headers */,
-				712E7C7610D199A7008DC18C /* IFSwitchCellController.h in Headers */,
-				712E7C7810D199A7008DC18C /* IFTemporaryModel.h in Headers */,
-				712E7C7A10D199A7008DC18C /* IFTextCellController.h in Headers */,
-				712E7C7C10D199A7008DC18C /* IFTextViewTableView.h in Headers */,
-				712E7C7E10D199A7008DC18C /* IFValueCellController.h in Headers */,
-				715E0CBC10DB069000AA4B07 /* CKNSDate+Calculations.h in Headers */,
-				715E0CCE10DB07B100AA4B07 /* CKNSDate+Conversions.h in Headers */,
-				715E0CF810DB0BDE00AA4B07 /* CKNSString+Validations.h in Headers */,
-				71B1975910F3EC26007F551A /* CKCoreDataManager.h in Headers */,
-				71B1980710F40D22007F551A /* CKNSManagedObjectContext+Requests.h in Headers */,
-				719F05CE10F6A818002955C0 /* CKAttribute.h in Headers */,
-				719F062B10F6E749002955C0 /* CKDomain.h in Headers */,
-				719F062D10F6E749002955C0 /* CKItem.h in Headers */,
-				719F063B10F6ED27002955C0 /* CKStore.h in Headers */,
-				4FE162E310FBD6D5002F5B37 /* CKAbstractCellController.h in Headers */,
-				4FE162E510FBD6D5002F5B37 /* CKButtonCellController.h in Headers */,
-				4FE162E710FBD6D5002F5B37 /* CKImageCellController.h in Headers */,
-				4FE162E910FBD6D5002F5B37 /* CKValueCellController.h in Headers */,
-				715CA15A110E374300593672 /* CKPickerView.h in Headers */,
-				710DF11210FFBC030063FB2C /* CKWebRequest.h in Headers */,
-				710DF11410FFBC030063FB2C /* CKWebService.h in Headers */,
-				7123DD76111A393F00F5DFB9 /* CKUIImage+Transformations.h in Headers */,
-				7141A340111A601500CB74CA /* ASIAuthenticationDialog.h in Headers */,
-				7141A342111A601500CB74CA /* ASIFormDataRequest.h in Headers */,
-				7141A344111A601500CB74CA /* ASIHTTPRequest.h in Headers */,
-				7141A346111A601500CB74CA /* ASIHTTPRequestConfig.h in Headers */,
-				7141A347111A601500CB74CA /* ASIInputStream.h in Headers */,
-				7141A349111A601500CB74CA /* ASINetworkQueue.h in Headers */,
-				7141A34B111A601500CB74CA /* ASINSStringAdditions.h in Headers */,
-				7141A34D111A601500CB74CA /* ASIS3BucketObject.h in Headers */,
-				7141A34F111A601500CB74CA /* ASIS3ListRequest.h in Headers */,
-				7141A351111A601500CB74CA /* ASIS3Request.h in Headers */,
-				71ACFEB811237CD200E6F938 /* CKDictionaryFromAttributesTransformer.h in Headers */,
-				719093F1112474CD003489BB /* CKAttributesDictionary.h in Headers */,
-				71E6660D1125D037005E6CEC /* CKUIColorAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		712E100210A4C7E700DF6562 /* UnitTests */ = {
 			isa = PBXNativeTarget;
@@ -857,7 +859,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CloudKit" */;
 			buildPhases = (
-				D2AAC07A0554694100DB518D /* Headers */,
+				7140447814CE126F00FE9A56 /* CopyFiles */,
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
 				712E113B10A4DA7200DF6562 /* ShellScript */,
@@ -1174,6 +1176,74 @@
 			};
 			name = Release;
 		};
+		7140447214CE118D00FE9A56 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 5;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				PUBLIC_HEADERS_FOLDER_PATH = ./Headers/CloudKit;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = AdHoc;
+		};
+		7140447314CE118D00FE9A56 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/CloudKit.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CloudKit_Prefix.pch;
+				INFOPLIST_FILE = "CloudKit-Info.plist";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CloudKit;
+			};
+			name = AdHoc;
+		};
+		7140447414CE118D00FE9A56 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1182,6 +1252,7 @@
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
 				1DEB922008733DC00010E9CD /* Release */,
+				7140447314CE118D00FE9A56 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1191,6 +1262,7 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+				7140447214CE118D00FE9A56 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1200,6 +1272,7 @@
 			buildConfigurations = (
 				712E100510A4C7E800DF6562 /* Debug */,
 				712E100610A4C7E800DF6562 /* Release */,
+				7140447414CE118D00FE9A56 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
