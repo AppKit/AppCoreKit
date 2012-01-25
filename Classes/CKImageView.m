@@ -8,7 +8,7 @@
 
 #import "CKImageView.h"
 #import "CKCache.h"
-#import <CloudKit/CKUIImage+Transformations.h>
+#import "CKUIImage+Transformations.h"
 
 @interface CKImageView ()
 

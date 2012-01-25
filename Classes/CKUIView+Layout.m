@@ -7,8 +7,7 @@
 //
 
 #import "CKUIView+Layout.h"
-#import <CloudKit/CKLayout.h>
-
+#import "CKLayout.h"
 
 @implementation UIView (CKUIViewLayoutAdditions)
 
