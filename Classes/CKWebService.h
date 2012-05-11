@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 #import "CKWebRequest.h"
-#import "Reachability.h"
+#import <VendorsKit/VendorsKit.h>
 
 @interface CKWebService : NSObject {
 	Reachability *_reachability;

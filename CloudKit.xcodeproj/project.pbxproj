@@ -210,7 +210,6 @@
 		71338131144CA97F00E9A00A /* CJSONSerializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71D185471301EAEE000AD883 /* CJSONSerializer.h */; };
 		71338132144CA97F00E9A00A /* JSONRepresentation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71D185491301EAEE000AD883 /* JSONRepresentation.h */; };
 		71338133144CA97F00E9A00A /* RegexKitLite.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E07B5D51214919F00346D3C /* RegexKitLite.h */; };
-		71338134144CA97F00E9A00A /* Reachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ADA00910A371C900C88903 /* Reachability.h */; };
 		71338135144CA97F00E9A00A /* ASIAuthenticationDialog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7160DA8E12417ACD008FF68B /* ASIAuthenticationDialog.h */; };
 		71338136144CA97F00E9A00A /* ASICacheDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7160DA9012417ACD008FF68B /* ASICacheDelegate.h */; };
 		71338137144CA97F00E9A00A /* ASIDownloadCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7160DA9112417ACD008FF68B /* ASIDownloadCache.h */; };
@@ -264,7 +263,6 @@
 		71AD9DFC10A362E100C88903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9DFB10A362E100C88903 /* UIKit.framework */; };
 		71AD9EEB10A36F6D00C88903 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */; };
 		71AD9F1810A36FFE00C88903 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AD9F1710A36FFE00C88903 /* libicucore.dylib */; };
-		71ADA00C10A371C900C88903 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA00A10A371C900C88903 /* Reachability.m */; };
 		71ADA06D10A3740400C88903 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05510A3740400C88903 /* CXMLDocument_CreationExtensions.m */; };
 		71ADA06F10A3740400C88903 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05710A3740400C88903 /* CXMLNode_CreationExtensions.m */; };
 		71ADA07110A3740400C88903 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADA05910A3740400C88903 /* CXMLDocument_PrivateExtensions.m */; };
@@ -326,6 +324,7 @@
 		75E71A86133A6A1C00CAAE66 /* CKFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E71A82133A6A1C00CAAE66 /* CKFeedTableViewController.m */; };
 		8566B72212F079E900277972 /* CKUIView+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8566B72012F079E900277972 /* CKUIView+Factory.m */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B012ABCF155D9E2F0001BA73 /* VendorsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012ABCE155D9E2F0001BA73 /* VendorsKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -487,7 +486,6 @@
 				71338131144CA97F00E9A00A /* CJSONSerializer.h in CopyFiles */,
 				71338132144CA97F00E9A00A /* JSONRepresentation.h in CopyFiles */,
 				71338133144CA97F00E9A00A /* RegexKitLite.h in CopyFiles */,
-				71338134144CA97F00E9A00A /* Reachability.h in CopyFiles */,
 				71338135144CA97F00E9A00A /* ASIAuthenticationDialog.h in CopyFiles */,
 				71338136144CA97F00E9A00A /* ASICacheDelegate.h in CopyFiles */,
 				71338137144CA97F00E9A00A /* ASIDownloadCache.h in CopyFiles */,
@@ -691,8 +689,6 @@
 		71AD9DFB10A362E100C88903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		71AD9EEA10A36F6D00C88903 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		71AD9F1710A36FFE00C88903 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		71ADA00910A371C900C88903 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Vendor/Apple/Reachability.h; sourceTree = "<group>"; };
-		71ADA00A10A371C900C88903 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Vendor/Apple/Reachability.m; sourceTree = "<group>"; };
 		71ADA05410A3740400C88903 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
 		71ADA05510A3740400C88903 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
 		71ADA05610A3740400C88903 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
@@ -817,6 +813,7 @@
 		8566B72012F079E900277972 /* CKUIView+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CKUIView+Factory.m"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* CloudKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudKit_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B012ABCE155D9E2F0001BA73 /* VendorsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VendorsKit.framework; path = ../../../../Dropbox/Frameworks/VendorsKit/1.0.x/VendorsKit.framework; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libCloudKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCloudKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -843,6 +840,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B012ABCF155D9E2F0001BA73 /* VendorsKit.framework in Frameworks */,
 				71FA9411143FA9C800CE9A55 /* libz.1.dylib in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				71AD9DE510A3629300C88903 /* AddressBook.framework in Frameworks */,
@@ -903,6 +901,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B012ABCE155D9E2F0001BA73 /* VendorsKit.framework */,
 				71917B281199E7D700386EB5 /* CoreLocation.framework */,
 				713F4B1410FB7CB4005367AB /* CoreData.framework */,
 				71AD9DFB10A362E100C88903 /* UIKit.framework */,
@@ -1203,7 +1202,6 @@
 				71ADA04D10A372F400C88903 /* TouchXML */,
 				71D185331301EAEE000AD883 /* TouchJSON */,
 				71ADA01A10A3725800C88903 /* RegexKitLite */,
-				71ADA00810A371B500C88903 /* Apple */,
 				71AD9FD810A370E700C88903 /* ASIHTTPRequest */,
 			);
 			name = Vendor;
@@ -1230,15 +1228,6 @@
 				7160DA9D12417ACD008FF68B /* ASIProgressDelegate.h */,
 			);
 			name = ASIHTTPRequest;
-			sourceTree = "<group>";
-		};
-		71ADA00810A371B500C88903 /* Apple */ = {
-			isa = PBXGroup;
-			children = (
-				71ADA00910A371C900C88903 /* Reachability.h */,
-				71ADA00A10A371C900C88903 /* Reachability.m */,
-			);
-			name = Apple;
 			sourceTree = "<group>";
 		};
 		71ADA01A10A3725800C88903 /* RegexKitLite */ = {
@@ -1575,7 +1564,6 @@
 				71AD9D8110A35F4600C88903 /* CKNSData+Base64.m in Sources */,
 				71AD9D8310A35F4600C88903 /* CKNSData+SHA1.m in Sources */,
 				71AD9D8510A35F4600C88903 /* CKNSString+URIQuery.m in Sources */,
-				71ADA00C10A371C900C88903 /* Reachability.m in Sources */,
 				71ADA06D10A3740400C88903 /* CXMLDocument_CreationExtensions.m in Sources */,
 				71ADA06F10A3740400C88903 /* CXMLNode_CreationExtensions.m in Sources */,
 				71ADA07110A3740400C88903 /* CXMLDocument_PrivateExtensions.m in Sources */,
@@ -1731,6 +1719,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../../../../Dropbox/Frameworks/VendorsKit/1.0.x\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -1751,6 +1740,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../../../../Dropbox/Frameworks/VendorsKit/1.0.x\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1905,6 +1895,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../../../../Dropbox/Frameworks/VendorsKit/1.0.x\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
