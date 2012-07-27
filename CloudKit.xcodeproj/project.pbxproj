@@ -1372,7 +1372,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CloudKit_Prefix.pch;
 				INFOPLIST_FILE = "CloudKit-Info.plist";
-				INSTALL_PATH = /usr/local/lib;
+				INSTALL_PATH = $TARGET_BUILD_DIR/;
 				PRODUCT_NAME = CloudKit;
 			};
 			name = Debug;
@@ -1390,7 +1390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CloudKit_Prefix.pch;
 				INFOPLIST_FILE = "CloudKit-Info.plist";
-				INSTALL_PATH = /usr/local/lib;
+				INSTALL_PATH = $TARGET_BUILD_DIR/;
 				PRODUCT_NAME = CloudKit;
 			};
 			name = Release;

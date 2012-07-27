@@ -304,6 +304,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 	UIView *headerView = [[self.sections objectAtIndex:section] headerView];
 	if (headerView) return headerView.frame.size.height;
+    else if ([[self.sections objectAtIndex:section] headerTitle] == nil) return -1;
 	return (tableView.style == UITableViewStyleGrouped) ? 34.0f : tableView.sectionHeaderHeight;
 }
 
