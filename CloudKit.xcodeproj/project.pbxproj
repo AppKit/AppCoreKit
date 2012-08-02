@@ -1380,6 +1380,7 @@
 				INFOPLIST_FILE = "CloudKit-Info.plist";
 				INSTALL_PATH = $BUILT_PRODUCTS_DIR/;
 				PRODUCT_NAME = CloudKit;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1398,6 +1399,7 @@
 				INFOPLIST_FILE = "CloudKit-Info.plist";
 				INSTALL_PATH = $BUILT_PRODUCTS_DIR/;
 				PRODUCT_NAME = CloudKit;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
