@@ -267,8 +267,8 @@
 		B0E1AF7C15CAED8E005289CE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Headers/CloudKit;
-			dstSubfolderSpec = 16;
+			dstPath = $BUILT_PRODUCTS_DIR/Headers/CloudKit;
+			dstSubfolderSpec = 0;
 			files = (
 				B0E1AF8215CAEDC4005289CE /* CKManagedTableViewController.h in CopyFiles */,
 				B0E1AF8315CAEDC4005289CE /* CKStandardCellController.h in CopyFiles */,
@@ -1378,7 +1378,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CloudKit_Prefix.pch;
 				INFOPLIST_FILE = "CloudKit-Info.plist";
-				INSTALL_PATH = $TARGET_BUILD_DIR/;
+				INSTALL_PATH = $BUILT_PRODUCTS_DIR/;
 				PRODUCT_NAME = CloudKit;
 			};
 			name = Debug;
@@ -1396,7 +1396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CloudKit_Prefix.pch;
 				INFOPLIST_FILE = "CloudKit-Info.plist";
-				INSTALL_PATH = $TARGET_BUILD_DIR/;
+				INSTALL_PATH = $BUILT_PRODUCTS_DIR/;
 				PRODUCT_NAME = CloudKit;
 			};
 			name = Release;
