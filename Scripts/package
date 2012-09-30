@@ -58,4 +58,5 @@ echo "Framework: Copying assets into current version..."
 
 cp -r Headers/CloudKit/* $FRAMEWORK_DIR/Headers/
 cp -r CloudKit.bundle $FRAMEWORK_DIR/Resources/
+cp -r Resources/CloudKit.xcdatamodeld $FRAMEWORK_DIR/Resources/
 cp CloudKit-Info.plist $FRAMEWORK_DIR/Resources/Info.plist
