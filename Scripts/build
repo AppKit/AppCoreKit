@@ -1,5 +1,5 @@
 #!/bin/bash  
 
-SDK_VERSION=5.0
-xcodebuild -configuration Release -target "CloudKit" -sdk iphoneos$SDK_VERSION ARCHS="armv7 armv6"
+SDK_VERSION=6.0
+xcodebuild -configuration Release -target "CloudKit" -sdk iphoneos$SDK_VERSION ARCHS="armv7 armv7s"
 xcodebuild -configuration Release -target "CloudKit" -sdk iphonesimulator$SDK_VERSION ARCHS="i386"
