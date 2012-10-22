@@ -42,8 +42,9 @@
  
  0 - No hackery, uses the KVO overridden -class to check.
  */
-#define KVO_HACK_LEVEL 1
+#define KVO_HACK_LEVEL 0
 
+/*
 #if KVO_HACK_LEVEL >= 1
 @interface NSObject (KVOPrivateMethod)
 
@@ -51,7 +52,7 @@
 
 @end
 #endif
-
+*/
 
 @interface MAZeroingWeakRef ()
 
@@ -371,11 +372,13 @@ void _CFRelease(CFTypeRef cf);
 
 static BOOL IsKVOSubclass(id obj)
 {
+    /*
 #if KVO_HACK_LEVEL >= 1
     return [obj respondsToSelector: @selector(_isKVOA)] && [obj _isKVOA];
 #else
+     */
     return [obj class] == class_getSuperclass(object_getClass(obj));
-#endif
+//#endif
 }
 
 static Class CreatePlainCustomSubclass(Class class)
