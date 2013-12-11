@@ -14,18 +14,6 @@ extern "C" {
     
     /**
      */
-    BOOL CKClassAddProperty(Class c,NSString* propertyName, Class propertyClass, CKClassPropertyDescriptorAssignementType assignment, BOOL nonatomic);
-    
-    /**
-     */
-    BOOL CKClassAddNativeProperty(Class c,NSString* propertyName, CKClassPropertyDescriptorType nativeType, BOOL nonatomic);
-    
-    /**
-     */
-    BOOL CKClassAddStructProperty(Class c,NSString* propertyName, NSString* structName,const char* encoding, NSInteger size, BOOL nonatomic);
-    
-    /**
-     */
     void CKSwizzleSelector(Class c,SEL selector, SEL newSelector);
     
     /**
