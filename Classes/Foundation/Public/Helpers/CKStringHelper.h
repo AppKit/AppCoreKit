@@ -11,6 +11,5 @@
 @interface CKStringHelper : NSObject
 
 + (CGSize)sizeForText:(NSString*)text font:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode;
-+ (CGSize)sizeForAttributedText:(NSAttributedString*)text constrainedToSize:(CGSize)size;
 
 @end

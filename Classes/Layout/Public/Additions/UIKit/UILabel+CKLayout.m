@@ -90,8 +90,6 @@ static char UILabelUsesAttributedStringKey;
     
     if(![self usesAttributedString] && self.text && [self.text length] > 0){
         ret = (self.font.lineHeight == 0) ? CGSizeMake(0,0) : [CKStringHelper sizeForText:self.text font:self.font constrainedToSize:maxSize lineBreakMode:self.lineBreakMode];
-    }else if(self.attributedText){
-        ret = [CKStringHelper sizeForAttributedText:self.attributedText constrainedToSize:maxSize];
     }
     
     //Backward Compatibility
@@ -161,22 +159,9 @@ static char UILabelUsesAttributedStringKey;
         [self invalidateLayout];
     }
 }
-- (void)UILabel_Layout_setAttributedText:(NSAttributedString*)attributedText{
-    if(![attributedText isEqualToAttributedString:self.attributedText]){
-        [self setUsesAttributedString:YES];
-        
-        [self UILabel_Layout_setAttributedText:attributedText];
-        
-        if(self.numberOfLines == 1 && !CGSizeEqualToSize(self.fixedSize, CGSizeMake(MAXFLOAT, MAXFLOAT)) )
-            return;
-        
-        [self invalidateLayout];
-    }
-}
 
 + (void)load{
     CKSwizzleSelector([UILabel class], @selector(setText:), @selector(UILabel_Layout_setText:));
-    CKSwizzleSelector([UILabel class], @selector(setAttributedText:), @selector(UILabel_Layout_setAttributedText:));
     CKSwizzleSelector([UILabel class], @selector(setFont:), @selector(UILabel_Layout_setFont:));
 }
 

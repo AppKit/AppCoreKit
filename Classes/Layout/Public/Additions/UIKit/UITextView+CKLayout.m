@@ -104,8 +104,6 @@ static char UITextViewUsesAttributedStringKey;
             [str appendString:@"a"];
         }
         ret = [CKStringHelper sizeForText:str font:self.font constrainedToSize:maxSize lineBreakMode:NSLineBreakByWordWrapping];
-    }else if(self.attributedText){
-        ret = [CKStringHelper sizeForAttributedText:self.attributedText constrainedToSize:maxSize];
     }
     
     if([self.containerLayoutBox isKindOfClass:[CKVerticalBoxLayout class]])
@@ -140,15 +138,7 @@ static char UITextViewUsesAttributedStringKey;
         [self invalidateLayout];
     }
 }
-- (void)UITextView_Layout_setAttributedText:(NSAttributedString*)attributedText{
-    if(![attributedText isEqualToAttributedString:self.attributedText]){
-        [self setUsesAttributedString:YES];
-        
-        [self UITextView_Layout_setAttributedText:attributedText];
-        
-        [self invalidateLayout];
-    }
-}
+
 - (void)setUsesAttributedString:(BOOL)bo{
     objc_setAssociatedObject(self,
                              &UITextViewUsesAttributedStringKey,
@@ -163,7 +153,6 @@ static char UITextViewUsesAttributedStringKey;
 
 + (void)load{
     CKSwizzleSelector([UITextView class], @selector(setText:), @selector(UITextView_Layout_setText:));
-    CKSwizzleSelector([UITextView class], @selector(setAttributedText:), @selector(UITextView_Layout_setAttributedText:));
     CKSwizzleSelector([UITextView class], @selector(setFont:), @selector(UITextView_Layout_setFont:));
     CKSwizzleSelector([UITextView class], @selector(setContentOffset:), @selector(UITextView_Layout_setContentOffset:));
     CKSwizzleSelector([UITextView class], @selector(dealloc),  @selector(UITextView_Layout_dealloc));

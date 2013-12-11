@@ -49,8 +49,6 @@ static char UITextFieldUsesAttributedStringKey;
     CGSize ret = CGSizeZero;
     if(![self usesAttributedString] && self.text){
         ret = [CKStringHelper sizeForText:self.text font:self.font constrainedToSize:maxSize lineBreakMode:NSLineBreakByWordWrapping];
-    }else if(self.attributedText){
-        ret = [CKStringHelper sizeForAttributedText:self.attributedText constrainedToSize:maxSize];
     }
     
     if([self.containerLayoutBox isKindOfClass:[CKVerticalBoxLayout class]])
@@ -84,15 +82,7 @@ static char UITextFieldUsesAttributedStringKey;
         [self invalidateLayout];
     }
 }
-- (void)UITextField_Layout_setAttributedText:(NSAttributedString*)attributedText{
-    if(![attributedText isEqualToAttributedString:self.attributedText]){
-        [self setUsesAttributedString:YES];
-        
-        [self UITextField_Layout_setAttributedText:attributedText];
-        
-        [self invalidateLayout];
-    }
-}
+
 - (void)setUsesAttributedString:(BOOL)bo{
     objc_setAssociatedObject(self,
                              &UITextFieldUsesAttributedStringKey,
@@ -107,7 +97,6 @@ static char UITextFieldUsesAttributedStringKey;
 
 + (void)load{
     CKSwizzleSelector([UITextField class], @selector(setText:), @selector(UITextField_Layout_setText:));
-    CKSwizzleSelector([UITextField class], @selector(setAttributedText:), @selector(UITextField_Layout_setAttributedText:));
     CKSwizzleSelector([UITextField class], @selector(setFont:), @selector(UITextField_Layout_setFont:));
 }
 

@@ -16,26 +16,8 @@
         return CGSizeMake(0,0);
     }
     
-    if([CKOSVersion() floatValue] >= 7){
-        NSAttributedString *attributedText = [[[NSAttributedString alloc] initWithString:text attributes:@{ @"NSFont" /*NSFontAttributeName*/ : font }]autorelease];
-        return [self sizeForAttributedText:attributedText constrainedToSize:size];
-    }
     return [text sizeWithFont:font constrainedToSize:size lineBreakMode:lineBreakMode];
 }
 
-+ (CGSize)sizeForAttributedText:(NSAttributedString*)attributedText constrainedToSize:(CGSize)size{
-    if(!attributedText){
-        return CGSizeMake(0,0);
-    }
-    
-    CGRect rect = [attributedText boundingRectWithSize:size
-                                               options:(1 << 0) //NSStringDrawingUsesLineFragmentOrigin
-                                               context:nil];
-    
-    CGFloat floorWidth  = floor(rect.size.width);
-    CGFloat floorHeight = floor(rect.size.height);
-
-    return CGSizeMake(floorWidth + ((floorWidth == rect.size.width) ? 0 : 1),floorHeight + ((floorHeight == rect.size.height) ? 0 : 1));
-}
 
 @end
