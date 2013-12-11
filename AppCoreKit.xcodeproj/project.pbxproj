@@ -3297,6 +3297,7 @@
 					"\"${CloudKitFrameworks}/VendorsKit/1.0.0/VendorsKit.framework/Headers/\"",
 				);
 				INFOPLIST_FILE = "CloudKit/AppCoreKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = AppCoreKit;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -3325,6 +3326,7 @@
 					"\"${CloudKitFrameworks}/VendorsKit/1.0.0/VendorsKit.framework/Headers/\"",
 				);
 				INFOPLIST_FILE = "CloudKit/AppCoreKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = AppCoreKit;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
