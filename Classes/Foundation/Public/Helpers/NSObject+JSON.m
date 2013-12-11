@@ -7,7 +7,6 @@
 //
 
 #import "NSObject+JSON.h"
-#import "JSONKit.h"
 
 @implementation NSObject (CKNSObjectJSON)
 
@@ -49,8 +48,14 @@
 + (id)objectFromJSONData:(NSData *)data {
 	return [NSObject objectFromJSONData:data error:nil];
 }
+
 + (id)objectFromJSONData:(NSData *)data error:(NSError **)error {
-	return [data objectFromJSONDataWithParseOptions:JKParseOptionValidFlags error:error];
+    
+    return [NSJSONSerialization JSONObjectWithData:data
+                                           options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments
+                                             error:error];
+    
+	//return [data objectFromJSONDataWithParseOptions:JKParseOptionValidFlags error:error];
 }
 
 @end

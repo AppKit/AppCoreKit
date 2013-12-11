@@ -12,11 +12,10 @@
 #import "CKProperty.h"
 #import "CKCollection.h"
 #import "CKCallback.h"
-#import "JSONKit.h"
 #import <objc/runtime.h>
 #import "NSError+Additions.h"
 #import "NSObject+Invocation.h"
-
+#import "NSObject+JSON.h"
 
 
 #import "UIColor+ValueTransformer.h"

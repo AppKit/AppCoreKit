@@ -13,7 +13,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <MapKit/MapKit.h>
 #import <objc/runtime.h>
-//libstdc++, libz, crypto, JSONKit
+//libstdc++, libz, crypto
 
 #import "CXMLDocument.h"
 #import "CXMLNode.h"

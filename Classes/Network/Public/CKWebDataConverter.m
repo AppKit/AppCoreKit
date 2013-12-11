@@ -9,8 +9,8 @@
 #import "CKWebDataConverter.h"
 #import <UIKit/UIKit.h>
 #import "CXMLDocument.h"
-#import "JSONKit.h"
 #import "RegexKitLite.h"
+#import "NSObject+JSON.h"
 
 @implementation CKWebDataConverter
 
@@ -46,7 +46,9 @@ static dispatch_group_t group;
         }]];
         
         [self addConverter:^id(NSData *data, NSURLResponse *response, NSError** error) {
-            id object = [data objectFromJSONDataWithParseOptions:JKParseOptionValidFlags error:error];
+            //id object = [data objectFromJSONDataWithParseOptions:JKParseOptionValidFlags error:error];
+            
+            id object = [NSObject objectFromJSONData:data  error:error];
             return object;
         } forMIMEPredicate:[NSPredicate predicateWithFormat:@"self = \"application/json\""]];
         

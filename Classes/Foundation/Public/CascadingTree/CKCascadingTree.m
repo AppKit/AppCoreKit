@@ -7,7 +7,6 @@
 //
 
 #import "CKCascadingTree.h"
-#import "JSONKit.h"
 
 #import "CKProperty.h"
 #import "NSValueTransformer+Additions.h"
@@ -16,6 +15,7 @@
 #import "CKConfiguration.h"
 #import "CKResourceManager.h"
 #import "CKVersion.h"
+#import "NSObject+JSON.h"
 
 //CKCascadingTreeItemFormat
 
@@ -1055,11 +1055,15 @@ NSString* const CKCascadingTreeOSVersion = @"@ios";
     //Parse file with validation
 	NSData* fileData = [NSData dataWithContentsOfFile:path];
 	NSError* error = nil;
-    id result = [fileData mutableObjectFromJSONDataWithParseOptions:JKParseOptionValidFlags error:&error];
+    
+    id result = [NSObject objectFromJSONData:fileData error:&error];
+   // id result = [fileData mutableObjectFromJSONDataWithParseOptions:JKParseOptionValidFlags error:&error];
     
     if (error){
-        CKDebugLog(@"**** Parsing error : invalid format in style file '%@' at line : '%@' with error : '%@'",[path lastPathComponent],[[error userInfo]objectForKey:@"JKLineNumberKey"],
-              [[error userInfo]objectForKey:@"NSLocalizedDescription"]);
+        CKDebugLog(@"**** Parsing error : invalid format in style file '%@' with error : '%@'",[path lastPathComponent],error);
+        
+        /*CKDebugLog(@"**** Parsing error : invalid format in style file '%@' at line : '%@' with error : '%@'",[path lastPathComponent],[[error userInfo]objectForKey:@"JKLineNumberKey"],
+              [[error userInfo]objectForKey:@"NSLocalizedDescription"]);*/
     }
 	
     //Post process
