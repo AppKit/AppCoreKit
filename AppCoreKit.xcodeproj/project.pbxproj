@@ -462,7 +462,6 @@
 		962840901570391E00160955 /* CloudKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7580AFCB144E314B004DCF7A /* CloudKit.xcdatamodeld */; };
 		962C08931820131B00A6E439 /* CKStackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 962C08911820131B00A6E439 /* CKStackViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		962C08941820131B00A6E439 /* CKStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962C08921820131B00A6E439 /* CKStackViewController.m */; };
-		962C6C5B16E7DBD100852D21 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962C6C5A16E7DBD100852D21 /* AdSupport.framework */; };
 		962FE4C518996D6900D5A449 /* UIPickerView+CKLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 962FE4C318996D6900D5A449 /* UIPickerView+CKLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		962FE4C618996D6900D5A449 /* UIPickerView+CKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 962FE4C418996D6900D5A449 /* UIPickerView+CKLayout.m */; };
 		963826541484011700A9C98B /* CKFormSectionBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 963826521484011700A9C98B /* CKFormSectionBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1154,7 +1153,6 @@
 		96243225155B0689002B6CE8 /* CKMapAnnotationController+BlockBasedInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CKMapAnnotationController+BlockBasedInterface.m"; path = "Classes/UI/Public/Map/CKMapAnnotationController+BlockBasedInterface.m"; sourceTree = "<group>"; };
 		962C08911820131B00A6E439 /* CKStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStackViewController.h; path = Classes/UI/Public/Controllers/Containers/CKStackViewController.h; sourceTree = "<group>"; };
 		962C08921820131B00A6E439 /* CKStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStackViewController.m; path = Classes/UI/Public/Controllers/Containers/CKStackViewController.m; sourceTree = "<group>"; };
-		962C6C5A16E7DBD100852D21 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		962FE4C318996D6900D5A449 /* UIPickerView+CKLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIPickerView+CKLayout.h"; path = "Classes/Layout/Public/Additions/UIKit/UIPickerView+CKLayout.h"; sourceTree = "<group>"; };
 		962FE4C418996D6900D5A449 /* UIPickerView+CKLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIPickerView+CKLayout.m"; path = "Classes/Layout/Public/Additions/UIKit/UIPickerView+CKLayout.m"; sourceTree = "<group>"; };
 		963826521484011700A9C98B /* CKFormSectionBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CKFormSectionBase.h; path = Classes/UI/Public/Table/Form/CKFormSectionBase.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1379,7 +1377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96B4517218D0A04100D58489 /* Accelerate.framework in Frameworks */,
-				962C6C5B16E7DBD100852D21 /* AdSupport.framework in Frameworks */,
 				7560DE5213B8F00F00268D13 /* MediaPlayer.framework in Frameworks */,
 				7560DE5313B8F00F00268D13 /* QuartzCore.framework in Frameworks */,
 				7560DE5413B8F00F00268D13 /* UIKit.framework in Frameworks */,
@@ -1921,7 +1918,6 @@
 			children = (
 				96B4517118D0A04100D58489 /* Accelerate.framework */,
 				7560DDB813B8EDB700268D13 /* Vendor */,
-				962C6C5A16E7DBD100852D21 /* AdSupport.framework */,
 				7560DE4213B8F00F00268D13 /* MediaPlayer.framework */,
 				7560DE4313B8F00F00268D13 /* QuartzCore.framework */,
 				7560DE4413B8F00F00268D13 /* UIKit.framework */,
