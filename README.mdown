@@ -148,8 +148,7 @@ SystemConfiguration,
 MobileCoreServices, 
 Security,
 CoreImage,
-Accelerate,
-AdSupport.
+Accelerate
 </pre>
 
 <div style="text-align:center">
