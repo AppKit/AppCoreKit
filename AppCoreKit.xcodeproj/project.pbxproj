@@ -1153,7 +1153,6 @@
 		96243225155B0689002B6CE8 /* CKMapAnnotationController+BlockBasedInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CKMapAnnotationController+BlockBasedInterface.m"; path = "Classes/UI/Public/Map/CKMapAnnotationController+BlockBasedInterface.m"; sourceTree = "<group>"; };
 		962C08911820131B00A6E439 /* CKStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKStackViewController.h; path = Classes/UI/Public/Controllers/Containers/CKStackViewController.h; sourceTree = "<group>"; };
 		962C08921820131B00A6E439 /* CKStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKStackViewController.m; path = Classes/UI/Public/Controllers/Containers/CKStackViewController.m; sourceTree = "<group>"; };
-		962C6C5A16E7DBD100852D21 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		962FE4C318996D6900D5A449 /* UIPickerView+CKLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIPickerView+CKLayout.h"; path = "Classes/Layout/Public/Additions/UIKit/UIPickerView+CKLayout.h"; sourceTree = "<group>"; };
 		962FE4C418996D6900D5A449 /* UIPickerView+CKLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIPickerView+CKLayout.m"; path = "Classes/Layout/Public/Additions/UIKit/UIPickerView+CKLayout.m"; sourceTree = "<group>"; };
 		963826521484011700A9C98B /* CKFormSectionBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = CKFormSectionBase.h; path = Classes/UI/Public/Table/Form/CKFormSectionBase.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1919,7 +1918,6 @@
 			children = (
 				96B4517118D0A04100D58489 /* Accelerate.framework */,
 				7560DDB813B8EDB700268D13 /* Vendor */,
-				962C6C5A16E7DBD100852D21 /* AdSupport.framework */,
 				7560DE4213B8F00F00268D13 /* MediaPlayer.framework */,
 				7560DE4313B8F00F00268D13 /* QuartzCore.framework */,
 				7560DE4413B8F00F00268D13 /* UIKit.framework */,
