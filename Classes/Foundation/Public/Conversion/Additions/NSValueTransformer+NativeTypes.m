@@ -67,16 +67,19 @@
 }
 
 
-+ (char)convertCharFromObject:(id)object{
-	if([object isKindOfClass:[NSString class]]){
++ (char)convertCharFromObject:(id)object
+{
+	if([object isKindOfClass:[NSString class]])
+    {
 		NSString* lower = [[object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] lowercaseString];
-		if([lower isEqual:@"yes"] || [lower isEqual:@"true"] || [lower isEqual:@"1"]){
+        
+		if([lower isEqual:@"yes"] || [lower isEqual:@"true"] || [lower isEqual:@"1"])
 			return 1;
-		}
-		else if([lower isEqual:@"no"] || [lower isEqual:@"false"] || [lower isEqual:@"0"]){
+
+		else if([lower isEqual:@"no"] || [lower isEqual:@"false"] || [lower isEqual:@"0"])
 			return 0;
-		}
-		return [object charValue];
+        
+		return [(NSString *)object characterAtIndex:0];
 	}
 	
 	CKAssert(object == nil || [object isKindOfClass:[NSNumber class]],@"invalid class for char");
