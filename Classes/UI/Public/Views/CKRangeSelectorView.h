@@ -38,7 +38,7 @@ typedef enum CKRangeSelectorDisplayType{
 @property(nonatomic,assign) UIEdgeInsets selectedRangeImageViewEdgeInsets;
 @property(nonatomic,assign) UIEdgeInsets backgroundImageViewEdgeInsets;
 @property(nonatomic,assign) CGSize selectorButtonSize;
-
+@property(nonatomic,assign) CGFloat selectionRangeFactor;
 
 @property(nonatomic,assign) CGFloat labelMargins;
 @property(nonatomic,retain,readonly) UILabel* startSelectorLabel;

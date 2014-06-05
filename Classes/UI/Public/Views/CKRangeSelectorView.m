@@ -23,7 +23,9 @@
 
 @end
 
-@implementation CKRangeSelectorView
+@implementation CKRangeSelectorView {
+    __strong UIButton *activeStartButton, *activeEndButton;
+}
 
 - (void)dealloc{
     [_startSelectorButton release];
@@ -67,21 +69,31 @@
     
     self.startSelectorButton = [[[UIButton alloc]init]autorelease];
     self.startSelectorButton.autoresizingMask = UIViewAutoresizingNone;
+    self.startSelectorButton.enabled = NO;
     [self addSubview: self.startSelectorButton];
     
-    [self.startSelectorButton addGestureRecognizer:[self panGestureRecognizerForSelector:CKRangeSelectorViewSelectorLeft]];
-    [self.startSelectorButton addTarget:self action:@selector(startTouched:) forControlEvents:UIControlEventTouchDown];
-    [self.startSelectorButton addTarget:self action:@selector(startTouchEnd:) forControlEvents:UIControlEventTouchUpInside];
+    activeStartButton = [[[UIButton alloc] init] autorelease];
+    activeStartButton.autoresizingMask = UIViewAutoresizingNone;
+    activeStartButton.backgroundColor = [UIColor clearColor];
+    [self addSubview:activeStartButton];
+    
+    [activeStartButton addGestureRecognizer:[self panGestureRecognizerForSelector:CKRangeSelectorViewSelectorLeft]];
+    [activeStartButton addTarget:self action:@selector(startTouched:) forControlEvents:UIControlEventTouchDown];
+    [activeStartButton addTarget:self action:@selector(startTouchEnd:) forControlEvents:UIControlEventTouchUpInside];
     
     self.endSelectorButton = [[[UIButton alloc]init]autorelease];
     self.endSelectorButton.autoresizingMask = UIViewAutoresizingNone;
+    self.endSelectorButton.enabled = NO;
     [self addSubview: self.endSelectorButton];
     
-    [self.endSelectorButton addGestureRecognizer:[self panGestureRecognizerForSelector:CKRangeSelectorViewSelectorRight]];
-    [self.endSelectorButton addTarget:self action:@selector(endTouched:) forControlEvents:UIControlEventTouchDown];
-    [self.endSelectorButton addTarget:self action:@selector(endTouchEnd:) forControlEvents:UIControlEventTouchUpInside];
+    activeEndButton = [[[UIButton alloc] init] autorelease];
+    activeEndButton.autoresizingMask = UIViewAutoresizingNone;
+    activeEndButton.backgroundColor = [UIColor clearColor];
+    [self addSubview:activeEndButton];
     
-    
+    [activeEndButton addGestureRecognizer:[self panGestureRecognizerForSelector:CKRangeSelectorViewSelectorRight]];
+    [activeEndButton addTarget:self action:@selector(endTouched:) forControlEvents:UIControlEventTouchDown];
+    [activeEndButton addTarget:self action:@selector(endTouchEnd:) forControlEvents:UIControlEventTouchUpInside];
     
     self.startSelectorLabel = [[[UILabel alloc]init]autorelease];
     self.startSelectorLabel.autoresizingMask = UIViewAutoresizingNone;
@@ -98,6 +110,7 @@
     self.joinedStartAndEndSelectorLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview: self.joinedStartAndEndSelectorLabel];
     
+    _selectionRangeFactor = 3.0;
     
     _minimumValue = 0;
     _maximumValue = 1;
@@ -109,7 +122,7 @@
 
 - (void)setDisplayType:(CKRangeSelectorDisplayType)d{
     _displayType = d;
-    self.endSelectorButton.hidden = self.endSelectorLabel.hidden = (d == CKRangeSelectorDisplayTypeSingleValue);
+     activeEndButton.hidden = self.endSelectorButton.hidden = self.endSelectorLabel.hidden = (d == CKRangeSelectorDisplayTypeSingleValue);
     [self setNeedsLayout];
 }
 
@@ -150,17 +163,18 @@
 
 - (void)setStartSelectionEnabled:(BOOL)bo{
     _startSelectionEnabled = bo;
-    self.startSelectorButton.hidden = !bo;
+    activeStartButton.hidden = self.startSelectorButton.hidden = !bo;
 }
 
 
 - (void)setEndSelectionEnabled:(BOOL)bo{
     _endSelectionEnabled = bo;
-    self.endSelectorButton.hidden = !bo;
+    activeEndButton.hidden = self.endSelectorButton.hidden = !bo;
 }
 
 
-- (void)layoutSubviews{
+- (void)layoutSubviews
+{
     [super layoutSubviews];
     
     CGFloat buttonsWidth = self.startSelectorButton.width + ((self.displayType == CKRangeSelectorDisplayTypeSingleValue) ? 0 : self.endSelectorButton.width);
@@ -182,6 +196,10 @@
     
     self.startSelectorButton.frame = CGRectMake((startRatio * width),(self.height - buttonsSize.height) / 2,buttonsSize.width,buttonsSize.height);
     self.endSelectorButton.frame = CGRectMake(self.selectorButtonSize.width + (endRatio * width),(self.height - buttonsSize.height) / 2,buttonsSize.width,buttonsSize.height);
+    
+    activeStartButton.frame = activeEndButton.frame = CGRectMake(0, 0, _selectionRangeFactor * buttonsSize.width, _selectionRangeFactor * buttonsSize.height);
+    activeStartButton.center = self.startSelectorButton.center;
+    activeEndButton.center = self.endSelectorButton.center;
     
     [self.startSelectorLabel sizeToFit];
     self.startSelectorLabel.width += 2 * self.labelMargins;
