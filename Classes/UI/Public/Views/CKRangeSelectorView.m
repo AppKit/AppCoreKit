@@ -10,7 +10,6 @@
 #import "UIView+Positioning.h"
 #import "UIGestureRecognizer+BlockBasedInterface.h"
 
-
 @interface CKRangeSelectorView()
 
 @property(nonatomic,retain,readwrite) UIButton* startSelectorButton;
@@ -78,7 +77,7 @@
     [self addSubview:activeStartButton];
     
     [activeStartButton addGestureRecognizer:[self panGestureRecognizerForSelector:CKRangeSelectorViewSelectorLeft]];
-    [activeStartButton addTarget:self action:@selector(startTouched:) forControlEvents:UIControlEventTouchDown];
+//    [activeStartButton addTarget:self action:@selector(startTouched:) forControlEvents:UIControlEventTouchDown];
     [activeStartButton addTarget:self action:@selector(startTouchEnd:) forControlEvents:UIControlEventTouchUpInside];
     
     self.endSelectorButton = [[[UIButton alloc]init]autorelease];
@@ -92,7 +91,7 @@
     [self addSubview:activeEndButton];
     
     [activeEndButton addGestureRecognizer:[self panGestureRecognizerForSelector:CKRangeSelectorViewSelectorRight]];
-    [activeEndButton addTarget:self action:@selector(endTouched:) forControlEvents:UIControlEventTouchDown];
+//    [activeEndButton addTarget:self action:@selector(endTouched:) forControlEvents:UIControlEventTouchDown];
     [activeEndButton addTarget:self action:@selector(endTouchEnd:) forControlEvents:UIControlEventTouchUpInside];
     
     self.startSelectorLabel = [[[UILabel alloc]init]autorelease];
@@ -315,6 +314,11 @@
         if(gestureRecognizer.state == UIGestureRecognizerStateBegan){
             oldStartValue = (bself.startValue < bself.minimumValue) ? bself.minimumValue : bself.startValue;
             oldEndValue = (bself.endValue   < oldStartValue) ? bself.maximumValue : bself.endValue;
+            
+            if(selector == CKRangeSelectorViewSelectorLeft)
+                [bself endTouched:nil];
+            else
+                [bself startTouched:nil];
         }
         else if(gestureRecognizer.state == UIGestureRecognizerStateChanged){
             UIPanGestureRecognizer* panGesture = (UIPanGestureRecognizer*)gestureRecognizer;
@@ -322,9 +326,10 @@
             
             [bself didTranslateSelector:selector offset:translation.x oldStartValue:oldStartValue oldEndValue:oldEndValue];
         }else if(gestureRecognizer.state == UIGestureRecognizerStateEnded || gestureRecognizer.state == UIGestureRecognizerStateRecognized){
-            if(bself.didEndEditingBlock){
-                bself.didEndEditingBlock();
-            }
+            if(selector == CKRangeSelectorViewSelectorLeft)
+                [bself endTouchEnd:nil];
+            else
+                [bself startTouchEnd:nil];
         }
     }]autorelease];
     
