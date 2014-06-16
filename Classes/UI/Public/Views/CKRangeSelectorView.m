@@ -109,7 +109,7 @@
     self.joinedStartAndEndSelectorLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview: self.joinedStartAndEndSelectorLabel];
     
-    _selectionRangeFactor = 3.0;
+    _selectionRangeFactor = 2.0;
     
     _minimumValue = 0;
     _maximumValue = 1;
@@ -352,7 +352,7 @@
             
             CGFloat newLocation = oldStartValue + offsetValue;
             if(newLocation < self.minimumValue){ newLocation = self.minimumValue; }
-            if(newLocation > self.maximumValue){  newLocation = self.maximumValue; }
+            if(newLocation > oldEndValue){  newLocation = oldEndValue; }
             
             NSInteger round = (NSInteger)(newLocation / self.increment);
             newStartValue = round * self.increment;
