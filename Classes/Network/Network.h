@@ -27,3 +27,5 @@
 
 #import "CKWebRequestManager.h"
 #import "CKWebRequest+Mapping.h"
+
+#import "CKWebRequestProfiler.h"
