@@ -805,6 +805,9 @@
         self.sectionsToControllers = [NSMutableArray array];
     }
     
+    NSLock* indexPathsLock = [[NSLock alloc] init];
+    [indexPathsLock lock];
+    
     for(NSInteger i = 0; i<[indexPaths count];++i){
         NSIndexPath* indexPath = [indexPaths objectAtIndex:i];
         NSIndexPath* object = [objects objectAtIndex:i];
@@ -827,6 +830,7 @@
         [controller performSelector:@selector(setValue:) withObject:object];
         [controller performSelector:@selector(setIndexPath:) withObject:indexPath];
     }
+    [indexPathsLock unlock];
 }
 
 - (void) removeItemViewControllersForObjects:(NSArray*)objects atIndexPaths:(NSArray*)indexPaths{ 
