@@ -674,6 +674,10 @@
 		EDD9E7E31436166D00E104D9 /* UIViewController+Introspection.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD9E7E11436166D00E104D9 /* UIViewController+Introspection.h */; };
 		EDD9E7E41436166D00E104D9 /* UIViewController+Introspection.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD9E7E21436166D00E104D9 /* UIViewController+Introspection.m */; };
 		EDF472F11446469400DBA2B5 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF472F01446469400DBA2B5 /* libz.1.dylib */; };
+		FDE92EFB19758E2F007736DB /* CKWebRequestProfileData.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE92EF719758E2F007736DB /* CKWebRequestProfileData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDE92EFC19758E2F007736DB /* CKWebRequestProfileData.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE92EF819758E2F007736DB /* CKWebRequestProfileData.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FDE92EFD19758E2F007736DB /* CKWebRequestProfiler.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE92EF919758E2F007736DB /* CKWebRequestProfiler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDE92EFE19758E2F007736DB /* CKWebRequestProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE92EFA19758E2F007736DB /* CKWebRequestProfiler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1369,6 +1373,10 @@
 		EDD9E7E11436166D00E104D9 /* UIViewController+Introspection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Introspection.h"; path = "Classes/Foundation/Private/Additions/UIKit/UIViewController+Introspection.h"; sourceTree = "<group>"; };
 		EDD9E7E21436166D00E104D9 /* UIViewController+Introspection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Introspection.m"; path = "Classes/Foundation/Private/Additions/UIKit/UIViewController+Introspection.m"; sourceTree = "<group>"; };
 		EDF472F01446469400DBA2B5 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
+		FDE92EF719758E2F007736DB /* CKWebRequestProfileData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKWebRequestProfileData.h; path = Classes/Network/Public/CKWebRequestProfileData.h; sourceTree = "<group>"; };
+		FDE92EF819758E2F007736DB /* CKWebRequestProfileData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKWebRequestProfileData.m; path = Classes/Network/Public/CKWebRequestProfileData.m; sourceTree = "<group>"; };
+		FDE92EF919758E2F007736DB /* CKWebRequestProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKWebRequestProfiler.h; path = Classes/Network/Public/CKWebRequestProfiler.h; sourceTree = "<group>"; };
+		FDE92EFA19758E2F007736DB /* CKWebRequestProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKWebRequestProfiler.m; path = Classes/Network/Public/CKWebRequestProfiler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1803,6 +1811,7 @@
 				9600B8ED1545D88F00F07C5A /* CKDownloadManager.m */,
 				9691A5391582575900E4E6E8 /* CKWebRequest+Mapping.h */,
 				9691A53A1582575900E4E6E8 /* CKWebRequest+Mapping.m */,
+				FDE92EFF19758E35007736DB /* Web Request Profiling */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -2660,6 +2669,17 @@
 			name = ResourceManager;
 			sourceTree = "<group>";
 		};
+		FDE92EFF19758E35007736DB /* Web Request Profiling */ = {
+			isa = PBXGroup;
+			children = (
+				FDE92EF919758E2F007736DB /* CKWebRequestProfiler.h */,
+				FDE92EFA19758E2F007736DB /* CKWebRequestProfiler.m */,
+				FDE92EF719758E2F007736DB /* CKWebRequestProfileData.h */,
+				FDE92EF819758E2F007736DB /* CKWebRequestProfileData.m */,
+			);
+			name = "Web Request Profiling";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -2676,6 +2696,9 @@
 				7560DC7313B8ED3600268D13 /* CKBindingsManager.h in Headers */,
 				7560DC7513B8ED3600268D13 /* CKBonjourResolver.h in Headers */,
 				B084A649156E786D0077AFDE /* CKWebViewController.m in Headers */,
+				9691A53B1582575900E4E6E8 /* CKWebRequest+Mapping.h in Headers */,
+				FDE92EFB19758E2F007736DB /* CKWebRequestProfileData.h in Headers */,
+				FDE92EFD19758E2F007736DB /* CKWebRequestProfiler.h in Headers */,
 				7560DC7B13B8ED3600268D13 /* CKCallback.h in Headers */,
 				7560DC7F13B8ED3600268D13 /* CKCarouselView.h in Headers */,
 				7560DC8113B8ED3600268D13 /* CKCGPropertyCellControllers.h in Headers */,
@@ -2932,7 +2955,6 @@
 				96B3BCF6182BED9800978B85 /* CKCollectionViewPageLayout.h in Headers */,
 				960CAED6157E50F500F6C887 /* UIGestureRecognizer+BlockBasedInterface.h in Headers */,
 				967CD1F715814048007F16D7 /* CKMockManager.h in Headers */,
-				9691A53B1582575900E4E6E8 /* CKWebRequest+Mapping.h in Headers */,
 				9601521C15892CBE00333DC4 /* CKViewCellCache.h in Headers */,
 				B02E75D51587E2B300A59A5A /* CKTableViewCellController+FlatHierarchy.h in Headers */,
 				96D2674215923B7700840A7F /* NSTimer+BlockBaseInterface.h in Headers */,
@@ -3266,9 +3288,11 @@
 				7560DDE713B8EE9800268D13 /* CXMLNode.m in Sources */,
 				7560DDEF13B8EEB600268D13 /* CXMLDocument_CreationExtensions.m in Sources */,
 				7560DDF113B8EEB600268D13 /* CXMLNode_CreationExtensions.m in Sources */,
+				FDE92EFC19758E2F007736DB /* CKWebRequestProfileData.m in Sources */,
 				7560DE2013B8EFA100268D13 /* RegexKitLite.m in Sources */,
 				4F4F053013C5F5410009DE31 /* CKActionSheet.m in Sources */,
 				96B3BCF3182BED9800978B85 /* CKCollectionViewLayoutController.m in Sources */,
+				FDE92EFE19758E2F007736DB /* CKWebRequestProfiler.m in Sources */,
 				4F689A6513CF2A4E000CE416 /* CKDebug.m in Sources */,
 				751F1EFF13D0E95B0041900C /* CKUserDefaults.m in Sources */,
 				75A4058313D87B2000D932B0 /* CKMappingContext.m in Sources */,
