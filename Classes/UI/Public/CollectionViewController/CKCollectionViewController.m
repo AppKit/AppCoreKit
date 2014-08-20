@@ -805,11 +805,10 @@
         self.sectionsToControllers = [NSMutableArray array];
     }
     
-    NSLock* indexPathsLock = [[NSLock alloc] init];
-    [indexPathsLock lock];
+    NSArray *indexPathsCopy = [indexPaths copy];
     
-    for(NSInteger i = 0; i<[indexPaths count];++i){
-        NSIndexPath* indexPath = [indexPaths objectAtIndex:i];
+    for(NSInteger i = 0; i<[indexPathsCopy count];++i){
+        NSIndexPath* indexPath = [indexPathsCopy objectAtIndex:i];
         NSIndexPath* object = [objects objectAtIndex:i];
         CKCollectionCellController* controller = [self createsControllerForObject:object atIndexPath:indexPath];
         
@@ -830,7 +829,6 @@
         [controller performSelector:@selector(setValue:) withObject:object];
         [controller performSelector:@selector(setIndexPath:) withObject:indexPath];
     }
-    [indexPathsLock unlock];
 }
 
 - (void) removeItemViewControllersForObjects:(NSArray*)objects atIndexPaths:(NSArray*)indexPaths{ 
